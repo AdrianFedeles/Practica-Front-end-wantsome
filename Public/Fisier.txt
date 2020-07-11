@@ -1,0 +1,1 @@
+scrie ceva 
