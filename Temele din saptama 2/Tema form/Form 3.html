@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UFT-8">
+</head>
+
+<body>
+    <form>
+        <label>Search for:</label><br>
+        <input type="search" name="Search_bar" value="chocolate cheesecake recipes" style="width: 220px;">
+        <input type="submit" value="Search"><br>
+        <label>Match:</label>
+        <input type="radio" name="Match" value="Any_word">
+        <label>Any word</label>
+        <input type="radio" name="Match" value="All_Words" checked>
+        <label>All Words</label>
+        <input type="radio" name="Match" value="Exact_phrase">
+        <label>Exact phrase</label><br>
+        <input type="checkbox" name="Sound-alike" value="Sound-alike" checked>
+        <label>Sound-alike macthing</label><br>
+        <label>Dates</label><br>
+        <input type="radio" name="Dated" value="Dated-Within the last year/montch/day"><br>
+        <select>
+            <option value="Within the last year">Within the last year</option>
+            <option value="Within the last montch">Within the last montch</option>
+            <option value="Within the last day">Within the last day</option>
+        </select><br>
+        <input type="radio" name="Dated" value="Dated-From/to" checked><br>
+        <label>Fron</label>
+        :
+        <select>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+        </select>
+        <select>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="...">...</option>
+        </select>
+        , <input type="number" min="1991" max="2040" name="Varsta" value="2009"><br>
+        <label>To</label>
+        :
+        <select>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+        <select>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="...">...</option>
+        </select>
+        , <input type="number" min="1991" max="2040" name="Varsta" value="2011"><br>
+        <label>Within:</label>
+        <select>
+            <option value="Within_description">Description</option>
+            <option value="Within_no-description">No-description</option>
+        </select>
+        <label>Show:</label>
+        <select>
+            <option value="Show10">10</option>
+            <option value="Show11">11</option>
+            <option value="Show12">12</option>
+        </select>
+        <label>results</label>
+        <select>
+            <option value="results_with">with</option>
+            <option value="results_without">without</option>
+        </select>
+        <label>summaries</label><br>
+        <label>Sort by:</label>
+        <select>
+            <option value="sort_by_relevance">relevance</option>
+            <option value="sort_by_irrelevance">irrelevance</option>
+            <option value="sort_by_ascending">ascending</option>
+            <option value="sort_by_descending">descending</option>
+        </select>
+    </form>
+</body>
+
+</html>
