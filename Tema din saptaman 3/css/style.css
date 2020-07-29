@@ -1,0 +1,54 @@
+ul {
+    color: green;
+  }
+  li:nth-child(3) {
+    background-color: lightblue;
+  }
+  li:first-child {
+    border-top: solid 1px green;
+  }
+  li:last-child {
+    border-bottom: dotted 5px blue;
+  }
+  li:nth-child(3) a {
+    color: red;
+  }
+  li:nth-child(5) a {
+    color: red;
+  }
+  li:nth-child(5) a:hover {
+    color: gray;
+  }
+  li:nth-child(2) {
+    list-style-type: none;
+  }
+  li:nth-child(5) {
+    list-style-type: none;
+  }
+  input[type="text"]:focus {
+    background-color: gray;
+  }
+  div:nth-child(1) input:focus {
+    color: green;
+  }
+  div:nth-child(2) input:focus {
+    color: blue;
+  }
+  /* div:nth-child(3) input:focus {
+      visibility: hidden;
+  }   */
+  
+  /* input[type="password"]:focus {
+    visibility: hidden;
+  } */
+  input[type="password"]:focus {
+      color: transparent;
+  }
+  input[type="email"]::selection {
+    color: pink;
+    background-color: yellow;
+  }
+  input[type="submit"]:hover {
+    color: red;
+  }
+  
