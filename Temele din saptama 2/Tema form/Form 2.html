@@ -3,49 +3,60 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Advanced CSS selectors exercise</title>
+    <link rel="stylesheet" href="css/style-form-2.css">
 </head>
-
+<div class="image1">
 <body>
+    <div class="h1-text">
+        <h1>&#127774;Greek island resort of Crete&#128150; </h1>
+    </div>
+    <div class="culoare-cer">
     <h1>Travel reservation form.</h1>
     <h3><i>*denotes mandotory</i></h3>
+    </div>
+    <label><b>Full name*:</b></label><br>
+    <input type="text" name="Full-Name" placeholder="Full-Name" required><br>
+    <br>
+    <label><b>Email adress*:</b></label><br>
+    <input type="email" name="Email-Adress" placeholder="Email - Adress"><br>
+    <br>
+    <label><b>Select Tour Pacage*:</b></label><br>
+    <select required>
+        <option value="goa">Goa</option>
+        <!--am pus Full 2, Full 3, nu stiu ce sa scris in cadrul "select tour package" nu stiu ce inseamna GOA si nu stiu ce sa completez in loc de full 3-4. Scuze nu m-am intalnit cu asa ceva.-->
+        <option value="Full 1">Full - 1</option>
+        <option value="Full 2">Full - 2</option>
+        <!--aici-->
+        <option value="Full 3">Full - 3</option>
+        <!--aici-->
+    </select><br>
+    <br>
+    <label><b>Arrival date*:</b></label><br>
+    <input type="date" name="Arrival date" required><br>
+    <br>
+    <label><b>Number of persons*:</b></label><br>
+    <input type="number" name="Number of persons" placeholder="UNKNON_TYPE" required><br>
+    <br>
+    <label><b>What wold you want to avail?*</b></label><br>
+    <mark><label>Boarding</label></mark><input type="checkbox" name="avail" value="Boarding"><br>
+    <mark><label>Fooding</label></mark><input type="checkbox" name="avail" value="Fooding"><br>
+    <mark><label>Sight seeing</label></mark><input type="checkbox" name="avail" value="Sight seeing"><br>
+    <br>
+    <label><b>Descout Coupon code:</b></label><br>
+    <input type="number" name="Descountcode" placeholder="UNKNON_TYPE"><br>
+    <br>
+    <div class="radio-buton">
+    <label><b>Terms and conditions:*</b></label><br>
+    <input type="radio" name="Terms_and_conditions" value="I agree" checked>
+    <label><b>I agree</b></label>
+    <input type="radio" name="Terms_and_conditions" value="I desagree">
+    <label><b>I desagree</b></label><br>
+    </div>
+    <br>
+    <div>
+    <input type="submit" value= "Complit reservation &#9757;" name="complit">
+    </div>
 </body>
-<label><b>Full name*:</b></label><br>
-<input type="text" name="Full-Name" placeholder="Full-Name" required><br>
-<br>
-<label><b>Email adress*:</b></label><br>
-<input type="email" name="Email-Adress" placeholder="Email - Adress"><br>
-<br>
-<label><b>Select Tour Pacage*:</b></label><br>
-<select required>
-    <option value="goa">Goa</option>
-    <!--am pus Full 2, Full 3, nu stiu ce sa scris in cadrul "select tour package" nu stiu ce inseamna GOA si nu stiu ce sa completez in loc de full 3-4. Scuze nu m-am intalnit cu asa ceva.-->
-    <option value="Full 1">Full - 1</option>
-    <option value="Full 2">Full - 2</option>
-    <!--aici-->
-    <option value="Full 3">Full - 3</option>
-    <!--aici-->
-</select><br>
-<br>
-<label><b>Arrival date*:</b></label><br>
-<input type="date" name="Arrival date" required><br>
-<br>
-<label><b>Number of persons*:</b></label><br>
-<input type="number" name="Number of persons" placeholder="UNKNON_TYPE" required><br>
-<br>
-<label><b>What wold you want to avail?*</b></label><br>
-<mark><label>Boarding</label></mark><input type="checkbox" name="avail" value="Boarding"><br>
-<mark><label>Fooding</label></mark><input type="checkbox" name="avail" value="Fooding"><br>
-<mark><label>Sight seeing</label></mark><input type="checkbox" name="avail" value="Sight seeing"><br>
-<br>
-<label><b>Descout Coupon code:</b></label><br>
-<input type="number" name="Descountcode" placeholder="UNKNON_TYPE"><br>
-<br>
-<label><b>Terms and conditions:*</b></label><br>
-<input type="radio" name="Terms_and_conditions" value="I agree" checked>
-<label><b>I agree</b></label>
-<input type="radio" name="Terms_and_conditions" value="I desagree">
-<label><b>I desagree</b></label><br>
-<br>
-<input type="submit" value="Complit reservation" name="complit">
-
+</div>
 </html>
