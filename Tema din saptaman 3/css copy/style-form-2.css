@@ -1,0 +1,41 @@
+.image1{
+    background-image: url(https://www.europafm.ro/wp-content/uploads/2019/04/Insula-Creta-port.jpg);
+    margin: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-left: 0px;
+    margin-right: 0px;
+    position: relative;
+    height: 1280px;
+    width: 1920px;
+}
+.h1-text{
+    position: absolute;
+    /* top: 0px; */
+    left: 750px;
+    /* width: 960%; */
+    bottom: 1025px;
+    transform: rotate(-2deg);
+    color: #864d149a;
+}
+.culoare-cer{
+    color: #244f8f67;
+}
+input[type="submit"]:hover{
+    color:  blue;
+    background-color:  #ffffff00;
+    box-shadow: crimson;
+
+}
+input[name="complit"]{
+    color: rgba(11, 69, 156, 0.705);
+    font-size: x-large;
+    background-color: rgba(220, 20, 60, 0);
+    
+}
+.radio-buton{
+    color: rgba(155, 68, 18, 0.836);
+    font-size: x-large;
+}

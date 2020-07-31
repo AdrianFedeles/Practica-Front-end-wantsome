@@ -1,0 +1,65 @@
+.imagine{
+    background-image: url(https://image.shutterstock.com/z/stock-vector-successful-smiling-young-business-man-holding-a-placard-with-inscription-new-job-welcome-to-362977265.jpg);
+    
+}
+input[type="text"]{
+    background-color:rgba(5, 78, 161, 0.445);
+    
+}
+label{
+    color: rgb(255, 153, 0);
+    font-size-adjust: none;
+}
+.nume-prenume{
+    border: solid;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 0px;
+    color: rgb(13, 144, 204);
+    width: 500px;
+    height: 30px;
+}
+.sex-varsta{
+    border: dotted;
+    border-top: solid;
+    border-bottom: solid;
+    border-radius: 8px;
+    width: 200px;
+    height: 100px;
+    color: rgb(9, 156, 119)
+}
+.varsta [type="number"]::selection {
+    background-color: rgb(255, 0, 0);
+    
+}
+.varsta [type="number"]{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.locatie{
+    border: dotted;
+    border-left: solid;
+    border-left-color:tomato;
+    border-right: solid;
+    border-right-color: tomato;
+    border-radius: 10px;
+    width: 200px;
+    height: 210px;
+    color: rgb(139, 9, 156)
+}
+.imagine-mesaj [type="textarea"] {
+    background-image: url("https://lh3.googleusercontent.com/Tqp26Lr64uJhl4GL9HqZeL_KinVlsa2y5lqmHRHC7GUVPtGzpIetUWTIArfXKxkm9g/500/500");
+    width: 500px;
+    height: 500px;
+}
+input[type="file"]:hover {
+    color: rgba(255, 99, 71, 0.548);
+
+}
+input[type="submit"]:hover {
+    color: rgb(255, 0, 0);
+}
+input[type="reset"]:hover {
+    background-color: turquoise;
+    color: yellowgreen;
+}

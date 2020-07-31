@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced CSS selectors exercise</title>
+    <link rel="stylesheet" href="css/style-form-1.css">
+</head>
+<div class="imagine">
+<body>
+    <form>
+        <div class="nume-prenume">
+        <label>Nume*:</label>
+        <input type="text" name="nume" placeholder="Nume*:" required>
+        <label>Prenume*:</label>
+        <input type="text" name="prenume" placeholder="Prenume*:" required>
+        </div>
+        <br>
+        <div class="sex-varsta">
+        <label>Sexul.</label><br>
+        <input type="radio" name="sex" value="Masculin"><mark> Masculin</mark>
+        <input type="radio" name="sex" value="Feminin" checked><mark>Feminin<br></mark>
+        <br>
+        <label>Varsta.</label><br>
+        <div class="varsta">
+        <input type="number" min="18" max="80" name="Varsta" value="18"><br>
+        </div>
+        </div>
+        <br>
+        <div class="locatie">
+        <label>Tara.</label><br>
+        <select>
+            <option value="Romania">Romania</option>
+            <option value="Bulgaria">Bulgaria</option>
+            <option value="Grecia">Grecia</option>
+            <option value="Ucraina">Ucraina</option>
+        </select><br>
+        <br>
+        <label>Oras:</label><br>
+        <input type="text" name="Oras" placeholder="Orasul unde locuiesti."><br>
+        <br>
+        <label>Adresa:</label><br>
+        <input type="text" name="Adresa" placeholder="Adresa unde locuiesti."><br>
+        <br>
+        <label>Cod Postal:</label><br>
+        <input type="text" name="Cod postal"><br></div>
+        <br>
+        <label>Adresa de Mail*:</label><br>
+        <input type="email" name="Adresa de mail*" placeholder="Adresa de mail*" required><br>
+        <br>
+        <label>Mesaj:</label><br>
+        <div class="imagine-mesaj">
+        <textarea name="Lasa un mesaj" id="Lasa un mesaj" cols="70" rows="20">Te rog lasa un mesaj....</textarea><br>
+        </div>
+        <br>
+        <div class="atasament">
+        <label>Atasare C.V.</label><br>
+        </div>
+        <div>
+        <input type="file" name="CV"><br>
+        </div>
+        <br>
+        <div>
+        <input type="submit" value="Trimite C.V."><br>
+        </div>
+        <br>
+        <div>
+        <input type="reset" value="Resetare Formular.">
+        </div>
+    </form>
+</body>
+</div>
+</html>
