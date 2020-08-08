@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animatii</title>
+        <meta charset="UTF-8">
+        <style>
+            .red{
+                background-color: rgba(255, 0, 0, 0.678);
+                width: 100px;
+                height: 100px;
+                /* transition-property: background-color, width, transform;
+                transition-duration: 0.3s;
+                transition-timing-function: ease-out; */
+                animation-name:animation1,animation2,animation3 ;
+                animation-duration: 7s;
+                animation-iteration-count: 3;
+            }
+            @keyframes animation1{
+                from{background-color: rgba(165, 42, 42, 0.356);}
+                to{background-color: darkblue;}
+            }
+            @keyframes animation2{
+                0%{background-color: rgba(255, 0, 0, 0.315);}
+                15%{background-color: orange;}
+                30%{background-color: purple;}
+                50%{background-color:violet;}
+                75%{background-color:yellow;}
+                90%{background-color: lime;}
+                100%{background-color: red;}
+            }
+            @keyframes animation3{
+                0%{width:100px;}
+                15%{width:130px;}
+                30%{width:240px;}
+                50%{width:320px;}
+                75%{height:230px;}
+                90%{width:130px;}
+                100%{width:100px;}
+            }
+
+
+
+        </style>
+    </head>
+        <body>
+                <div class="red"></div>
+        </body>
+    
+</html>

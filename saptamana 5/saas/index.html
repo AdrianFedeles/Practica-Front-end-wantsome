@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sass play</title>
+        <meta charset="UTF-8">
+        <style>
+            .red{
+                background-color: red;
+                width: 100px;
+                height: 100px;
+                transition-property: width;
+                transition-duration: 1s;
+                transition-timing-function: ease-in-out;
+            }
+            .blue{
+                background-color: blue;
+                width: 100px;
+                height: 100px;
+                transition-property: width;
+                transition-duration: 1s;
+                transition-timing-function: ease-in-out;
+                transition-delay: 0.5s;
+            }
+            .container:hover .red{
+                width: 350px;
+            }
+            .container:hover .blue{
+                width: 350px;
+            }
+        </style>
+    </head>
+        <body>
+            <div class="container">
+                <div class="red"></div>
+                <div class="blue"></div>
+            </div>
+        </body>
+    
+</html>

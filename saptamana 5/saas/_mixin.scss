@@ -1,0 +1,33 @@
+@mixin forn-buttons{
+    background-color: lightgreen;
+    font-weight: bold;
+    border: solid 1px black;
+    color: black;
+    padding: 5px 15px;
+
+    &:hover{
+        background-color: rgb(196, 38, 38);
+        border-color: lightseagreen;
+    }
+}
+.subscribe-btn{
+    @include forn-buttons;
+}
+
+@mixin params-buttons($base, $hover, $text) {
+    background-color: $base;
+    padding: 10px 25px;
+    border-radius: 8px;
+    color: $text;
+    font-weight: bold;
+    &:hover{
+        background-color: $hover;
+    }
+}
+
+.menu{
+    @include params-buttons(brown,lightgreen ,black )
+}
+.product{
+    @include params-buttons(green,lightgreen ,white )
+}

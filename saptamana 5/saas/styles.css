@@ -1,0 +1,98 @@
+.title {
+  color: red;
+}
+
+.myBtn {
+  border-radius: 10px;
+  border: solid 2px lightgray;
+  background-color: #09ff00;
+}
+
+.shop-btn {
+  border-radius: 5px;
+  background-color: pink;
+}
+
+.menu-brn {
+  border-radius: 5px;
+  background-color: lime;
+}
+
+.myList h2 {
+  color: purple;
+  margin: 0px;
+}
+
+.myList ul {
+  margin: 10ox;
+  list-style: circle;
+  color: #11ccda;
+}
+
+.myList li:hover {
+  color: lime;
+}
+
+.myList .A {
+  width: 30px;
+  height: 30px;
+  background-color: maroon;
+}
+
+.subscribe-btn {
+  background-color: lightgreen;
+  font-weight: bold;
+  border: solid 1px black;
+  color: black;
+  padding: 5px 15px;
+}
+
+.subscribe-btn:hover {
+  background-color: #c42626;
+  border-color: lightseagreen;
+}
+
+.menu {
+  background-color: brown;
+  padding: 10px 25px;
+  border-radius: 8px;
+  color: black;
+  font-weight: bold;
+}
+
+.menu:hover {
+  background-color: lightgreen;
+}
+
+.product {
+  background-color: green;
+  padding: 10px 25px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+.product:hover {
+  background-color: lightgreen;
+}
+
+.normal, .success, .error {
+  padding: 10px 30px;
+  color: #333;
+  border: solid 2px #ccc;
+  width: 62.5%;
+  text-align: center;
+  margin: 10px;
+}
+
+.success {
+  border-color: #0f4d0f;
+  color: #78bd10;
+}
+
+.error {
+  border-color: #803850;
+  font-weight: bold;
+  background-color: red;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,22 @@
+.myList{
+    h2{
+        color: purple;
+        margin: 0px;
+    }
+    ul{
+        margin: 10ox;
+        list-style: circle;
+        color: rgb(17, 204, 218);
+    }
+    li{
+        &:hover{
+            color: lime;
+        }
+    }
+    .A{
+        width: 30px;
+        height: 30px;
+        background-color: maroon;
+    }
+
+}

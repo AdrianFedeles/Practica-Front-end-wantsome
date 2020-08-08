@@ -1,0 +1,32 @@
+$titles-color: red;
+
+$radius: 10px;
+$button-border: 2px;
+$border-color:lightgray;
+
+$stte-with:1600px;
+
+$menu-button-radious: 5px;
+
+$ship-buttob-radious:5px;
+.title{
+    color:$titles-color;
+}
+
+.myBtn{
+    border-radius: $radius;
+    border: solid $button-border $border-color;
+    background-color: rgb(9, 255, 0);
+}
+
+// .container{
+//     max-width: $stte-with;
+// }
+.shop-btn{
+    border-radius: $ship-buttob-radious;
+    background-color: pink
+}
+.menu-brn{
+    border-radius: $menu-button-radious;
+    background-color: lime;
+}
