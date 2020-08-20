@@ -1,0 +1,51 @@
+.sectionButtom {
+  background-color: rgb(33, 6, 187);
+  height: 1000px;
+  text-align: center;
+  color: white;
+}
+.h1SectionButtom {
+  padding-top: 60px;
+  font-size: 60px;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+.formBottom {
+  padding-top: 5%;
+}
+
+.formBottom input {
+  height: 30px;
+  width: 30%;
+  display: inline-block;
+  position: relative;
+}
+.formBottom label {
+  display: inline-block;
+  padding-top: 1.7em;
+  margin-right: 25%;
+}
+.formBottom textarea {
+  position: relative;
+  display: inline-block;
+  width: 30%;
+  height: 300px;
+}
+input[type="submit"] {
+  background-color: rgb(165, 58, 58);
+  color: white;
+  margin-right: 26%;
+  margin-top: 1%;
+  width: 55px;
+  height: 25px;
+  border: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .sectionButtom{
+        background-color: rgb(255, 0, 0);
+    }
+    input[type="submit"]{
+      color: rgb(124, 124, 124);
+      background-color: rgb(122, 24, 24);
+    }
+}
