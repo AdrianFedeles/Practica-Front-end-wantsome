@@ -31,7 +31,7 @@
   height: 300px;
 }
 input[type="submit"] {
-  background-color: rgb(165, 58, 58);
+  background-color: rgb(80, 15, 233);
   color: white;
   margin-right: 26%;
   margin-top: 1%;
@@ -42,10 +42,28 @@ input[type="submit"] {
 
 @media only screen and (max-width: 800px) {
     .sectionButtom{
-        background-color: rgb(255, 0, 0);
+      background-color: rgb(255, 60, 0);
     }
     input[type="submit"]{
-      color: rgb(124, 124, 124);
-      background-color: rgb(122, 24, 24);
+      background-color: rgb(148, 55, 26);
+      color: rgb(206, 200, 200);
+      margin-right: 26%;
+      margin-top: 1%;
+      width: 10%;
+      height: 25px;
+      border: none;
+      margin-left: 50px;
+
+    }
+    .formBottom input{
+      width: 80%;
+      height: 40px;
+    }
+    .formBottom textarea{
+      width: 80%;
+      height: 100px;
+    }
+    .formBottom label{
+      padding-left: 90px;
     }
 }

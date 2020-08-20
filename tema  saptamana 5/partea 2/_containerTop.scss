@@ -9,7 +9,7 @@ $color: white;
   background-position: 20% 50%;
   background-repeat: no-repeat;
   padding-bottom: 300px;
-  border-bottom: solid 5px rgb(45, 9, 177);
+  border-bottom: solid 5px rgb(33, 6, 187);
   
 }
 .topContent {
@@ -18,7 +18,7 @@ $color: white;
 .paragraphLogo {
   font-size: 15px;
   padding: 5px;
-  color: red;
+  color: rgb(255, 60, 0);
   text-shadow: 1px 1px 0px #000000;
   text-align: center;
 }
@@ -42,7 +42,7 @@ $color: white;
 }
 .topBottomPart h4{
   font-size: 30px;
-  margin-bottom: 50px;
+  margin-bottom: px;
 }
 .topBottomPart p{
   // margin-left: 40.7px;
@@ -85,8 +85,21 @@ $color: white;
 @media only screen and (max-width: 800px){
   .list1{
     color: rgb(255, 255, 255);
+    margin: 80px;
   }
   .containerTop{
     background-image: url(https://scontent.fias1-1.fna.fbcdn.net/v/t1.0-9/118204843_366651744730205_8230020341205578005_o.jpg?_nc_cat=101&_nc_sid=e007fa&_nc_ohc=yPERU-Az0LcAX-8iCEq&_nc_ht=scontent.fias1-1.fna&oh=ee32f0b215c8bc685a9b50229f0a8288&oe=5F62FE5F);
+    border-bottom: solid 5px rgb(255, 60, 0);
+  }
+  .topBadge2{
+    padding-left: 30px;
+    padding-top: 50px;
+  }
+  .topBottomPart p{
+    width: 100%;
+  }
+  .topBottomPart h4{
+    width: 100%;
+    padding: 45px;
   }
 }
