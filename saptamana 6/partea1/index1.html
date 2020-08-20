@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JAVASCRIPT</title>
+    <meta charset="UTF-8">
+    <script>
+        var fructe = ['clementine', 'kiwi', 'ananas', 'mango']
+        console.log(fructe.lenght);
+        console.log(fructe[0]);
+        console.log(fructe[2]);
+
+
+
+        var masini = ['mustang', 'aro', 'BMV'];
+        var masiniSport = ['tigra', 'porsche'];
+
+        var allcars = masini.concat(masiniSport);
+        console.log(allcars);
+
+        console.log(Array.isArray(masini));
+
+        var animal = 'Pisica';
+        console.log(Array.isArray(animal));
+
+        //join 
+
+        var stringDeFructe = fructe.join(' ');
+        console.log(stringDeFructe);
+
+        //push
+
+        var nume = ['Ionut', 'Radu', 'Andreea'];
+        console.log(nume);
+
+        nume.push('Raluca');
+        console.log(nume);
+
+        //pop
+
+        nume.pop();
+
+        console.log(nume);
+
+        //shift
+
+        nume.shift();
+        console.log(nume);
+
+        //unshift
+
+        nume.unshift('Emilian', 'Emilia');
+
+        console.log(nume);
+
+        //reverse
+        nume.reverse();
+        console.log(nume);
+
+        //sort
+
+        nume.sort();
+        console.log(nume);
+
+        var numbers = [1, 5, -7, 3, 22, 27,21];
+        numbers.sort();
+        console.log(numbers);
+
+        numbers.sort(function(a, b){
+            return a - b;
+        })
+        console.log(numbers);
+
+        numbers.sort(function(a, b){
+            return b - a;
+        });
+        console.log(numbers);
+
+        //splice
+        var orase = ['Iasi', 'Bucuresti', 'Timisoara', 'Cluj', 'Brasov', 'Arad', 'Sibiu'];
+        orase.splice(1, 2, 'Constanta', 'Giurgiu', 'Barlad');
+        console.log(orase);
+
+        var orase = ['Iasi', 'Bucuresti', 'Timisoara', 'Cluj', 'Brasov', 'Arad', 'Sibiu'];
+        orase.splice(0, 2, 'Constanta', 'Giurgiu', 'Barlad');
+        console.log(orase);
+
+        var orase = ['Iasi', 'Bucuresti', 'Timisoara', 'Cluj', 'Brasov', 'Arad', 'Sibiu'];
+        orase.splice(1, orase.length, 'Constanta', 'Giurgiu', 'Barlad');
+        console.log(orase);
+
+        var orase = ['Iasi', 'Bucuresti', 'Timisoara', 'Cluj', 'Brasov', 'Arad', 'Sibiu'];
+        orase.splice(2, orase.length, 'Constanta', 'Giurgiu', 'Barlad');
+        console.log(orase);
+
+        var orase = ['Iasi', 'Bucuresti', 'Timisoara', 'Cluj', 'Brasov', 'Arad', 'Sibiu'];
+        orase.splice(0, orase.length, 'Constanta', 'Giurgiu', 'Barlad');
+        console.log(orase);
+
+
+        
+
+    </script>
+
+</head>
+
+<body>
+    <h1>JAVASCRIPT</h1>
+</body>
+
+</html>
