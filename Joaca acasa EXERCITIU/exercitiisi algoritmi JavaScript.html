@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS</title>
+    <meta charset="UTF-8">
+    <script>
+/*
+//Ex1
+//Scrieti o functie multiplyByTen care atunci cand o apelam cu console.log(multiplyByTen(6)) sa avem 60 rezultat.
+
+
+//function multiplyByTen(a){ //definim functia numita multiplyByTen si ii atribuim 1 valore a
+  //acum ca sa ne dea rezultatul 60 trebuie sa facem un calcul cu inmultim 6 *10care este = cu 60
+ // multiplyByTen = a * 10; //scriem multiplyByTen (numele functiei noastre) = cu a(valoarea functiei multiplyByTen) o inmultim cu 10
+ // return  multiplyByTen; //cerem sa rezolve functia si sa ne returneze rezultatul dintre a * 10
+//}
+ //console.log(multiplyByTen(9)); // ii fan functiei noastre multiplyByTen o valoare data de noi care sa o calculeze mai departe la a=6=>6*10=>=60(putem pune ori ce numar in acel console.log(multiplyByTen(...)))
+
+
+//Ex2
+//Scrieti o functie myNameIs care sa ia un singur parametru si cand o apelam cu numele nostru sa returneze "Numele meu este ___"
+
+
+// function myNameIs (nume) {
+//   myNameIs = "Numele meu este " + nume + ".";
+//   return myNameIs; 
+// }
+// console.log(myNameIs("Adrian"));
+
+
+//Ex3 
+//Scrieti o functie care sa transforme un numar in string.
+
+
+//function myFunction(a) {//avem o functie care o denumim myFunction si ii dam valoarea a;
+//  var num = a.toString(); //facem o variabila denumita num; si in interiorul variabilei facem operatiunea de transformare a numarului in sting; valoarea functiti (a) data de conle.log prin apelarea numeliui functiei  myFunction si 'a'  l-am inlociut cu 15 in cazul nostru
+//  return num;//ii cerem variabilei noastre 'num' sa returneze operatiunea de transformare a numarului in string.
+//}//apoi o apelam prin console.log()
+//console.log(myFunction(15));//apelam prin console.log numele functiri noastre cu numarul 15 in loc de 'a' deoarece  15 va merge inlocuit in valoarea functiei noastre va intra in variabila noastra numita 'num' ce va rezulta ca 15.toString si ii cerem varianilei noastre 'num 'sa returneze rezultatul transformarii ceea ce inseamna ca num preia rezultatul functiei noastre numita 'myFunction' si va deveni 'num' adica num este myFunction si o apelam prin console.log(myFunction(numar oare care)) 
+
+
+
+//Ex4 
+//Scrieti o functie care sa returneze patratul numarului pe care-l dam ca si argument.
+
+//facem o functie ce o numim myFunctie cu valoarea a;
+//facem o variabila cu numele patrat  si sa calculeze patratul functiei noastre;
+//chemam variabila 
+//facem console.log de myFunction si o valoare numerica in paranteze.
+
+
+// function myFunction (a,b){
+//   var patrat = Math.pow(a, b);
+//   return patrat;
+// }
+// console.log(myFunction(2,2));
+
+
+//Ex5
+//Scrieti o functie numita aflaViitorul care sa aiba 4 parametrii -  numele jobului, compania, in cati ani, si cati bani - ar trebui sa returnam "Eu voi fi v in x ani la compania y si voi face z bani pe ora"
+//Chemati/invocati/apelati acea functie de 3 ori cu diferite argumente.
+
+//facem o functie cu numele dat aflaViitorul; functia noastra va avea 4 argumente. 'v', 'x', 'y', 'z'.
+//facem o fariabila ce o numim concat, in aceasta variabila facem concatenarea intre cele 4 argumente xv-x-y-z. in interior trebuie sa aparat textul concatenat cu argumentele:
+    //"Eu voi fi v in x ani la compania y si voi face z bani pe ora" adica: "Eu voi fi " + v + "in " + x + " ani la compania" + y + " si voi face" + z + " bani pe ora."
+//chemam variabila voastra concat
+//o apelam de 3 ori cu diferite argumente: 
+//console.log(v,x,y,z);v = farmacist, x = 3, y = catena, z = 5 $:
+//console.log(v,x,y,z);v = developer, x = 5, y = Centric, z = 50 Euro:
+//console.log(v,x,y,z);v = astronaut, x = 1000, y = Nasa, z = 500000 puli Bwatsuaneze:
+
+// function aflaViitorul (v,x,y,z){
+//   var concat = "Eu voi fi " + v + " in, " + x + " ani, la compania, " + y + " si voi face " + z + " bani pe ora.";
+//   return concat;
+// }
+// console.log(aflaViitorul("Farmacist",3,"Catena","$" + 5));
+// console.log(aflaViitorul("developer",5,"Centric",50 + " Erueo"));
+// console.log(aflaViitorul("astronaut",1000,"Nasa",500000 + " puli Bwatsuaneze"));
+
+//Ex6
+//Scrieti o functie care sa calculeze cati ani are o pisica in ani pisicesti avand in vedere ca 1 an de om = 7 ani de pisica.
+// functia are 1 singur parametru - deci va accepta 1 singur argument.
+// Rezultatul trebuie sa fie "Pisica mea are xx ani in ani pisicesti"
+//BONUS - adaugati un alt parametru care reprezinta varsta noastra si obtinem la final varsta pisciii relatata la varsta noastra.
+
+//1 an de om = 7 ani de pisica
+//facem o functie numita calculAniPisicaOm ii punem 2 parametri aniiMei si aniiPisicii.
+//faceem o variabila numita calculatorPisi unde calculam valoarea functiei aniiPisicii *7
+//facem o variabila numita calculatorOm unde calculam valoarea functiei aniiMei/7
+
+//facem un return ce sa ne returneze numele variabilei unde se calculeaza 
+//facem un console.log(calculAniPisica())
+
+// function calculAniPisicaOm (aniiMei,aniiPisicii){
+//   var calculatorPisi = aniiPisicii * 7;
+//   var calculatorOm = aniiMei % 7;  
+//   console.log("Pisica mea are " +calculatorPisi + " ani in ani pisicesti.");
+//   console.log("Iar eu am " + calculatorOm + " ani pisicesti.")
+// }
+// calculAniPisicaOm( 13 , 1 );
+
+
+//Ex7
+// Vreau sa scriu o functie ce sa calculeze pentru urmatorii X ani cate cani de cafea voi bea
+// Functia accepta ca parametrii years si coffePerDay.
+// Rezultatul va fi "In urmatorii X ani voi bea in total Y cani de cafea"
+
+//facem o functie myFunction care va avea ca valori parametri years si coffePerDay
+//facem o fvriabila numita calcul1 care va calcula coffePerDay%24
+//von atribui valorii years calcul1*365zile intr-un am
+//facem un console.log de calcul1 si years care va fi: console.log("In urmatorii" + calcul1 + " ani voi bea in total" + years + " cani de cafea");
+//v-om apela din exteriorul fuctiei fara console,log ci asa: myFunction(); intre(vom pune cate cafele bem intr-o zi si el calculeaza cate cafele bem intr-un an de exemplu.)
+
+//"In urmatorii 1 ani voi bea in total 365 cani de cafea"
+
+
+function myFunction (coffePerDay,years){
+    var calcul1 = coffePerDay%24;
+    years = calcul1*365
+    console.log("In urmatorii " + calcul1 + " ani voi bea in total " + years + " cani de cafea.");
+};
+myFunction(1);
+myFunction(10);
+myFunction(1.1);
+myFunction(-1);
+myFunction(-1.1);
+myFunction("a");
+
+
+//EX8 BONUS 
+// Faceti 2 functii una calculateCelsiusToFarenheit() si una calculateFarenheitToCelsius() unde sa facem conversia dintre celsius si farenhite.
+// rezultatul trebuie sa fie "X grade Celsius reprezinta Y grade Farenhite"
+// folositi https://www.mathsisfun.com/temperature-conversion.html ca si referinta pentru calcul.
+mai dregraba https://www.rapidtables.com/convert/temperature/fahrenheit-to-celsius.html
+
+
+//facem o fuctia prima calculateCelsiusToFarenheit(Celsius); unde aveam ca valori Farenhite
+
+//facem variabila conversieInFarenhite unde  Celsius×9/5+32=32°Farenhite
+
+//facem doua functie  calculateFarenheitToCelsius(Farenhite);
+
+//facem o variabila conversieInCelsius unde (Farenhite-32)×5/9=-17.777777778°Celsius
+
+//facem un console.log unde scriem: Celsius + " grade Celsius reprezinta " + conversieInFarenhite + " grade Farenhite."
+
+//adica console.log( Celsius + " grade Celsius reprezinta " + conversieInFarenhite + " grade Farenhite.")
+
+//facem un console.log unde scriem: Farenhite + "grade Farenhite reprezinta " + conversieInCelsius + "grade Celsius."
+
+//cadica console.log(Farenhite + "grade Farenhite reprezinta " + conversieInCelsius + "grade Celsius.");
+
+function calculateCelsiusToFarenheit(Celsius){
+  var conversieInFarenhite = Celsius * 9/5+32;//=32°Farenhite
+  return conversieInFarenhite;
+}
+
+function calculateFarenheitToCelsius(Farenhite){
+  var conversieInCelsius = (Farenhite-32)*5/9 
+  
+  return conversieInCelsius
+}
+console.log(calculateCelsiusToFarenheit(0))
+console.log(calculateFarenheitToCelsius(0))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+
+/*
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+<body>
+    <h1>JavaSript</h1>
+</body>
+</head>
+
+</html>
