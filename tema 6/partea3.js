@@ -51,7 +51,11 @@ console.log(gradation(9.5));
 
 
 
-//exercitiul 3
+//3. Scrieti o functie care accepta ca argument numele marcii unei masini si returneaza un text de forma:
+// "Marca [marca] se produce in [tara]". Trebuie sa aveti macar 6 cazuri. In cazul in care functia nu recunoaste marca, 
+//va returna "Marca este necunoscuta. " Scrieti codul in 3 variante diferite. In declararea functiei trebuie sa se 
+//regaseasca o functie anonima. Una dintre implementari trebuie sa fie bazata pe Object Literals 
+//( read:  https://ultimatecourses.com/blog/deprecating-the-switch-statement-for-object-literals )
 
 
 //Object
