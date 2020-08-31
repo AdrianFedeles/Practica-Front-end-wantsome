@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JAVASCRIPT</title>
+    <meta charset="UTF-8">
+    <script>
+
+        // var double;
+        // function double (num){
+        //     return (num*2);
+        // }
+        // console.log(duble + 3);
+        // console.log(typeof double);
+
+
+
+
+        // function foo() {
+        //     var a = 5;
+        //     var b = 2;
+        //     function bar() {
+        //         console.log(a + b );
+        //     }
+        //     return bar;
+        // }
+        // var test = foo;
+
+        // console.log(test);
+        // test = test();
+        // console.log(test);
+        // test();
+
+        // var globalVar = "someting";
+        // function foo() {
+        //     var a = 5;
+        //     var b = 2;
+        //     function bar() {
+        //         console.log(a + b);
+        //     }
+        //     return bar;
+        //}
+        // var asd = foo();// returneaza o functia bar
+        //         //a si b a fost declarare
+        // var bcd = asd();
+
+        // function outer() {
+        //     var b = 10;
+        //     function inner() {
+
+        //         var a = 20;
+        //         console.log(a + b);
+        //     }
+        //     return inner;
+        // }
+        // var firstTime = outer(); //outer() invoked the first time
+        // var secondTime = outer(); //outer() invoked the second time
+
+
+
+        //TEMA
+        /*//Ex1
+//Vreau sa am o functie care sa-mi calculeze suma dintre 2 numere daca ele sunt diferite iar daca sunt egale sa-mi imulteasca suma lor cu 5
+//ex myFunction(10, 5) - output 15 // myFunction(10,10) - output 100
+
+//Ex2
+//Vreau sa am o functie care sa returneze true daca ambele numere sunt egale cu 30 sau daca suma lor este egala cu 30
+//ex testFunction(30, 30) - true
+//testFunction(15,15) - true
+//testFunction(10, 15) - false
+
+//Ex3
+//Vreau sa am o functie care sa verifice un string si daca stringul incepe cu 'JS' sa returneze acel string iar daca nu incepe sa-l adauge
+//checkString('JSisAwsome') - JSisAwsome
+//checkString('isEasy') - JSisEasy
+//checkString(null) - JS
+
+//Ex4
+//Scrieti o functie care sa scoata literele/cifrele duplicate dintr-un string/numbar
+//removeDuplicates('aabcdeef') - 'abcdef'
+//removeDuplicates(122334) - 1234
+
+//Ex5
+// Gasiti cel mai lung string intr-o fraza
+//findLongestString('Wantsome is Awsomeeee today') - output 'Awsomeeee'
+
+//Ex6
+//Scrieti o functie care sa aiba output-ul asta
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
+
+//ex7
+  const negativeNumbers = [];
+
+  function extractNegativeNumbers(numbers) {
+      // append any negative numbers found in the numbers array
+      // into the negativeNumbers array constant variable above
+
+  }
+  extractNegativeNumbers([1,2,-5,4,-6])
+
+//ex8
+//Avem o functie cu 2 numere si un operator, vrem sa obtinem rezultatul in functie de operator - "add", "substract", "multiply", "divide"
+//ex calculate(2, 5, "add") => 7
+//calculate(10, 8, "substract") => 2
+
+//Ex9
+// Vreau sa am o functie care sa verifice daca numarul dat este divizibl cu 3, 5 sau ambele si sa printeze "THREE", "FIVE", "BOTH" iar daca nu este cu niciunul sa returneze numarul
+// isDiv(15) => "BOTH"
+// isDiv(9)=> "THREE"
+// isDiv(7)=> 7
+
+
+//Master exercises
+//Ex9
+// Vreau sa pot afisa data si ziua sub urmatorul format:
+// Azi este : Luni.
+// Ora este : 20 PM : 30 : 38
+
+//Implementati toate exercitiile folosind sintaxa ES6
+//Toate denumirile de variabile si functii trebuie sa fie in EN
+//Folositi nume sugestive si aveti grija la indentare
+
+/*
+1. Implementati o functie care accepta ca parametru o valoare numerica si returneaza suma numerelor de la 1 pana la valoarea specificata
+*/
+
+
+/*
+2. Implementati o functie care accepta ca parametru un string si returneaza cel mai lung cuvant din acel string.
+*/
+
+/*
+3. Implementati o functie care accepta ca parametru un string si ii face 'reverse'
+*/
+
+/*
+4. Implementati o functie care accepta ca parametru un string si inlocuieste fiecare litera din acesta cu urmatoarea litera din alfabet
+*/
+
+/*
+5. Implementati o functie convertToTime care accepta ca parametru o valoare numerica si o converteste la numarul de ore si minute corespunzatoare.
+Exemplu: input: 64  ->  output: 1:4
+*/
+
+/*
+6. Implementati o functie care accepta ca parametru un string si returneaza string-ul cu toate literele ordonate alfabetic
+*/
+
+/*
+7. Implementati o functie care accepta ca parametru un string si verifica daca inainte si dupa fiecare litera din cadrul sau se afla caracterul '+'
+Exemplu: input: "+a+b+c+"   ->   output: true
+Exemply: input: "+ab+c+d+"  ->   output: false
+*/
+
+
+
+        /*
+        function multiplay ( a, b = 1 ){
+            console.log(a*b);
+        }
+        multiplay(2,3);
+        multiplay(2);
+
+
+        function sum(a,b,c=0){
+            console.log(a+b+c);
+        }
+        sum (1,2,3)//6
+        sum(1,2)//3
+
+        var txt1 = "ASD";
+        var txt2 = "bcd";
+        var txt3 = "qwe";
+
+
+        console.log(txt1+ " "+ txt2 + " "+ txt3);
+
+        var name = "Robert";
+        var age = 32;
+        var sex = "M";
+
+        console.log("Bine ai venit" + name + "Momentam ai " + age + " si sexul" + sex) ;
+        console.log(` Bine ai venit ${name}. Momenran ai trait ${100-age} si sexul  de tip :${sex}`)
+
+        function test(a, b, c, d, e, f = 0, g = 0) {
+            let sum = a + b + c + d + e + f + g;
+            console.log(sum);
+        }
+        function test2(...rest) {
+            let = 0;
+            for (var i = 0; i < rest.length; i++) {
+                sum += rest[i];
+            }
+            console.log(sum);
+        }
+        test2(1, 2, 3, 4, 5);//15
+        test2(1, 2, 3, 4, 5, 10);//25
+        test2(1, 2, 3, 4, 5, 10, 15);//40
+
+
+        const myFunction = function () {
+            return "ceva";
+        }
+        function myFunction2() {
+            return "ceva";
+        }
+        const myFunction3 = () => "ceva";
+
+        console.log(myFunction());
+        console.log(myFunction2());
+        console.log(myFunction3());
+
+
+
+
+        const myFunction3 = () => {
+            var a = 2;
+            var b = 2;
+            return a + b;
+        }
+        const myFunction3 = a => {
+            if (a < 5) {
+                return "small";
+            } else {
+                return "big";
+            }
+        }
+        console.log(myFunction3());
+        console.log(myFunction3(24));
+
+        var b= [1,2,3,4,5];
+
+        var c =  b.map(entry => entry*2);
+        console.log(c);
+
+
+        const car= {
+            model: "Fiesta",
+            brand: "Ford",
+            name: function (){
+                setTimeout(() => {
+                    console.log(`${this.model} ${this.brand}`);
+                }, 300);
+                
+            }
+        }
+        car.name();
+
+
+        var model = "Logan";
+        var brand = "Dacia";
+        const car2= {
+            model: "Fiesta",
+            brand: "Ford",
+            name:  () => {
+                console.log(`${this.model} ${this.brand}`);
+            }
+        }
+        car2.name();
+
+        */
+
+        // const car= {
+        //     model: "Fiesta",
+        //     brand: "Ford",
+        //     name: function (){
+        //         setTimeout(() => {
+        //             console.log(`${this.model} ${this.brand}`);
+        //         }, 300);
+                
+        //     }
+        // }
+        // car.name();
+
+
+        // var model = "Logan";
+        // var brand = "Dacia";
+        // const car2= {
+        //     model: "Fiesta",
+        //     brand: "Ford",
+        //     name:  () => {
+        //         console.log(`${this.model} ${this.brand}`);
+        //     }
+        // }
+        // car2.name();
+
+
+
+        /*
+
+        */
+
+
+        /*
+
+        */
+
+
+        /*
+
+        */
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+    <h1>JAVASCRIPT</h1>
+</body>
+
+</html>
