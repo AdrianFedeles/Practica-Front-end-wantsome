@@ -11,7 +11,7 @@
 
 
 //function multiplyByTen(a){ //definim functia numita multiplyByTen si ii atribuim 1 valore a
-  //acum ca sa ne dea rezultatul 60 trebuie sa facem un calcul cu inmultim 6 *10care este = cu 60
+  //acum ca sa ne dea rezultatul 60 trebuie sa facem un calcul cu inmultire 6 *10care este = cu 60
  // multiplyByTen = a * 10; //scriem multiplyByTen (numele functiei noastre) = cu a(valoarea functiei multiplyByTen) o inmultim cu 10
  // return  multiplyByTen; //cerem sa rezolve functia si sa ne returneze rezultatul dintre a * 10
 //}
@@ -22,9 +22,9 @@
 //Scrieti o functie myNameIs care sa ia un singur parametru si cand o apelam cu numele nostru sa returneze "Numele meu este ___"
 
 
-// function myNameIs (nume) {
-//   myNameIs = "Numele meu este " + nume + ".";
-//   return myNameIs; 
+// function myNameIs (nume) {//facem o functie numita myNameIs cu parametrul nume
+//   myNameIs = "Numele meu este " + nume + ".";// atribuim functiei noastre myNameIs  ii atribuim valoarea "Numele meu este " + nume + "."; pentru a o concatena
+//   return myNameIs; // facem un call de numele functiei si apoi un console.log(myNameIs("Adrian"))
 // }
 // console.log(myNameIs("Adrian"));
 
@@ -44,7 +44,7 @@
 //Ex4 
 //Scrieti o functie care sa returneze patratul numarului pe care-l dam ca si argument.
 
-//facem o functie ce o numim myFunctie cu valoarea a;
+//facem o functie ce o numim myFunctie cu valoarile a,b;
 //facem o variabila cu numele patrat  si sa calculeze patratul functiei noastre;
 //chemam variabila 
 //facem console.log de myFunction si o valoare numerica in paranteze.
@@ -163,6 +163,109 @@ function calculateFarenheitToCelsius(Farenhite){
 }
 console.log(calculateCelsiusToFarenheit(0))
 console.log(calculateFarenheitToCelsius(0))
+
+
+//Ex1 : La ce index intalnim cuvantul 'trece', dar cuvantul 'javascript'? Scrieti si metodele folosite.
+var str = "Daca te simti bine, nu te ingrijora, trece!";
+// facem o variabila strDosition unde ii atribuim operatiunea str.indexOf(trece!)
+//facem un console.log (strDosition)
+//Raspuns: 
+var strDosition = str.indexOf("trece");
+var strDosition1 = str.indexOf("javascript");
+console.log(strDosition1);
+console.log(strDosition);
+
+// Ex2.0: Returnati stringul Kiwi folosind metoda slice() cu indexi pozitivi si apoi negativi.
+// Ex 2.1: Returnati toate fructele incepand de la 'Lemon'.
+  var fruits = "Apple, Lemon, Plum, Kiwi";
+  var rezultat1 = fruits.slice(20,24);
+  var rezultat2 = fruits.slice(20,23);
+  var rezultat3 = fruits.slice(-1.-3);
+  var rezultat4 = fruits.slice(7);
+
+console.log(rezultat1);
+console.log(rezultat2);
+console.log(rezultat3);
+console.log(rezultat4);
+
+// Ex 3: Returnati stringul 'Plum' folosind metoda substr()
+  var moreFruits = "Apple, Lemon, Plum, Kiwi";
+  var str = moreFruits.substr(14,4);
+  console.log(str);
+
+// Ex 4: Inlocuiti 'Mia Kalifa' cu numele vostru folosind o metoda pe stringuri
+// bonus: Inlocuiti "Sasha" cu numele vostru in tot stringul de mai jos.
+//    var replaceName = "Eu sunt Mia Kalifa, doctor docent in matematica";
+//    var str = replaceName.replace("Mia Kalifa","Fedeles Adrian");
+//    console.log(str);
+
+var bonusName = "Sasha este o persoana de nota 10, Sasha invata javascript(mai nou) "
+
+var bonusName = "Sasha este o persoana de nota 10, Sasha invata javascript(mai nou), pentru ca Sasha e un jmecher si are impresia ca Sasha sunt defapt Sasha2 "
+ var str1 = bonusName.replace(/sashA/gi,"Fedeles Adrian");//facem o functie str1 in care ii scriem numele variabile pentru a putea 
+ aplea textul ei ca valoare, bonusName.replace(pentru a putea inlocui stringuri din variabila //bonusName), in ()avem comentat stringul 
+ Sashasi ii atribuim o inlocuire globala prin metaoda g sau gi, functioneaza astfel: comentam stringul Sashapentru identificare in valoarea 
+ variabilei bonusName cuvantul Sasha si sa fie //inlocuit ori de cate ori il vede in sirul nostru de stringuri.este un semi caseSenzitive
+ (avem "Sasha" putem modifica lireta S cu s si a cu A ca va functiona, alte modificari aduse in interior nu va functiona)
+
+ console.log(str1);
+
+// Ex5: Vreau ca toate literele sa fie intai cu caractere mici si apoi cu caractere mari
+
+
+
+   var text = "24 de orE intr-o zi, 24 de beRi intr-o lAda. Vreo coincidenta?"
+   var str1 = text.toLowerCase();
+   var str2 = text.toUpperCase();
+
+   console.log(str1);
+   console.log(str2);
+   
+   console.log(text.toLowerCase());
+   console.log(text.toUpperCase());
+   
+
+// Ex6: Vreau sa am la final un singur string cu toate celalte stringuri (indentati calumea, cu spatii unde e nevoie)
+
+
+   var text1 = "Când ai un";
+   var text2 = "ciocan";
+   var text3 = "in mana toate lucrurile ti se par";
+   var text4 = "cuie";
+var str4 = text3.replace(" toate",", toate");
+var str1 = text1.concat(" ",text2);
+var str2 = str1.concat(" ",str4);
+var str3 = str2.concat(" ",text4,".");
+console.log(str3);
+
+
+// Ex7: Vreau sa stiu intai ce litera se afla pentru indexul 6, apoi ce unicode are aceasta litera, si apoi vreau sa o accesez cu 'property access'
+  var word = "Mamaliga";
+var str1 = word.charAt(6);
+console.log(str1);
+var str2 = word.charCodeAt(6);
+console.log(str2);
+var str3 = word[6];
+console.log(str3);
+
+// Ex8: Vreau sa am o noua variabla care sa cotina un array format din toate stringurile de mai jos care sunt despartite de '|'
+  var cars = "Toyota|Mazda|Tesla|Hyundai|Dacia";
+var str1 = cars.split();
+console.log(str1);
+
+
+//Big BONUS 
+// Se dau variabilele de mai jos, vreau sa ajung la rezultatul "NU EXISTA INTREBARI PROASTE" fara sa modific valorile celor 2 variabile;
+  var firstWord = 'Nu exista';
+  var secondWord = 'raspunsuri proaste';
+
+var str1 = firstWord.concat(" ",secondWord,".");
+var str2 = str1.toUpperCase();
+
+console.log(str1);
+console.log(str2);
+
+
 
 
 
