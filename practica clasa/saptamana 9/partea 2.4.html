@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JAVASCRIPT Change the DOM!</title>
+    <meta charset="UTF-8">
+    <style>
+        .active {
+            border: 3px solid greenyellow;
+        }
+
+        .alert {
+            border: 3px solid red;
+
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        div {
+            border: 3px solid gray;
+            padding: 15px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Div #1</div>
+    <div class="active">Div #2</div>
+    <button onclick="toggleClass()">Toggle class</button>
+
+
+
+
+    <script>
+        const div = document.querySelector('div');
+        div.className = 'alert';
+
+        const secondDiv = document.querySelector('.active');
+
+        const toggleClass = () => {
+            //secondDiv.classList.toggle('hidden');
+            secondDiv.classList.replace('active', 'alert');
+        }
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*TEMA  https://codepen.io/oviduzz/pen/WWZjjV*/
+    </script>
+</body>
+
+</html>
