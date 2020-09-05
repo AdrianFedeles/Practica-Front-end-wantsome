@@ -98,37 +98,7 @@ dezvoltate la tema anterioara ! */
 //- 9 = A
 //- 10 = A+
 
-//function gradation(qualifying) {
-//    var qualifyingNumber = Number(qualifying);
-//    if (1 <= qualifyingNumber && qualifyingNumber <= 10) {
-//        switch (true) {
-//            case qualifyingNumber <= 3:
-//                {
-//                    return "Pentru nota " + qualifyingNumber + " vei avea calificativul E.";
-//                }
-//            case qualifyingNumber <= 6:
-//                {
-//                    return ;
-//                }
-//            case qualifyingNumber <= 8:
-//                {
-//                    return "Pentru nota " + qualifyingNumber + " vei avea calificativul B.";
-//                }
-//            case qualifyingNumber <= 9:
-//                {
-//                    return "Pentru nota " + qualifyingNumber + " vei avea calificativul A.";
-//                }
-//            case qualifyingNumber <= 10:
-//                {
-//                    return 
-//                }
-//        }
-//    }
-//    else {
-//        return "Acest punctaj nu exista in scoala din Romania, incearca in Franta!";
-//    }
-//}
-//console.log(gradation(9.5));
+
 for (i = 1; i <= 10; i++) {
     switch (true) {
         case i <= 3:
