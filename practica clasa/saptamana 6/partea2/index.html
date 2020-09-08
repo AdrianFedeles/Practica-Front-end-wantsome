@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS</title>
+    <meta charset="UTF-8">
+    <script>
+        function numeFunctie() {
+            console.log('You called me!');
+        }
+        numeFunctie();
+
+        function numaNumerelor(a, b) {
+            return a + b;
+        }
+        console.log(numaNumerelor(4, 5));
+        console.log(numaNumerelor(45, 2));
+
+
+        //Name function
+
+        function showMessage(text) {
+            console.log(text);
+        }
+        showMessage('YOU JUST CALLED ME!!!');
+
+        // Function expressions
+
+
+        var x = function () {
+            console.log('Hi, I don`t have a name!')
+        }
+        x();
+        var myFunction = function (a, b) {
+            return a * b;
+        }
+        console.log(myFunction(3, 4));
+
+        //Anonymus function
+
+        var anonymus = function () {
+            console.log('Hi, I don`t have a name!');
+        }
+        anonymus();
+
+            // Immediately Invoked Function Expression "IIFE"
+
+        (function() {
+            var message = 'I can call Myself, don`t need any help!';
+            console.log(message);
+        })();
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+<body>
+    <h1>JavaSript</h1>
+</body>
+</head>
+
+</html>

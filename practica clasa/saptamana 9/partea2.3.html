@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JAVASCRIPT Change the DOM!</title>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+
+    <img alt="duck" src="https://d23.com/app/uploads/2019/06/1600w-1000h_060719_wyng-quiz-donald-duck-1.jpg"
+        width="420px" height="auto" />
+    <h2 style="color: black">This will become a dog</h2>
+
+    <script>
+
+
+        const image = document.querySelector('img');
+        console.log(image.hasAttribute('alt'));
+        console.log(image.getAttribute('alt'));
+        console.log(image.getAttribute('src'));
+        console.log(image);
+        //image.removeAttribute('alt');
+        //console.log(image);
+        //image.removeAttribute('src');
+        //console.log(image);
+        setTimeout(() => image.setAttribute('src', 'https://www.thespruce.com/thmb/jMtJRClFPZIZ5wwvRKj89lL2LBA=/1500x1000/filters:fill(auto,1)/duck-big-bill-59ef8e5068e1a2001072c89e.jpg'), 1000);
+        text.setAttribute('style', 'color:magenta');
+        text.setAttribute('style', 'font-size: 40px');
+
+
+
+
+
+
+
+
+
+
+        /*TEMA  https://codepen.io/oviduzz/pen/WWZjjV*/
+    </script>
+</body>
+
+</html>

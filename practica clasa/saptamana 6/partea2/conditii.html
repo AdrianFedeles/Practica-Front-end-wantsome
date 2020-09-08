@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS</title>
+    <meta charset="UTF-8">
+    <script>
+
+        //if - folosit pentru a executa un cod , daca conditia este true;
+
+        var number = 7;
+
+        if (number > 9) {
+            console.log('Conditia este indeplinita');
+        }
+
+        // else cand aceesi conditia este falsa
+        //exemplu simplu
+
+
+        var nr = 12;
+        if (nr > 5) {
+            console.log('Conditie indeplinita')
+        } else {
+            console.log('Conditia initiala neindeplinita');
+        };
+
+        //exemplu mai complex
+        var name = 'Mariuss';
+        var user = 'Marius';
+
+        if (name === user) {
+            console.log('Hello user ' + user + ' welcome to Admin!');
+        } else {
+            console.log('User is not autentificated correctly!')
+        }
+
+        var fructe = ['mere', 'pere'];
+        if (fructe[0] === 'prune') {
+            console.log('Avem mere');
+        } else {
+            console.log('Trebuie sa cumparam mere')
+        }
+
+
+        //else if - - Folosim else if pentru a specifica o noua conditie de test daca prima conditie este falsa
+
+        var number = 3;
+        if (number > 10) {
+            console.log(number + 'este mai mare deact 10');
+        } else if (number > 1) {
+            console.log(number + ' este mai mare decat 1')
+        } else {
+            console.log('Nu ne intereseaza ce numar este');
+        };
+
+        //switch - Folosim switch pentru a specifica mai multe blocuri de cod alternative pentru a fi executate in cazul unei conditii indeplinite 
+
+        var car = 'Audis'
+
+        switch (car) {
+            case 'Mazda': {
+                console.log('ftr6yfj');
+            }
+                break;
+            case 'Audi': {
+                console.log('Bnn');
+            }
+                break;
+            default: {
+                console.log('Nu ai castigat nimic!');
+            }
+        }
+
+        //exercitii
+
+        var user1 = {
+            name: {
+                first: "John",
+                last: 'Doe',
+            },
+            gender: 'male',
+            title: 'normal',
+            sections: ['Account', ' Generic'],
+        };
+        var user2 = {
+            name: {
+                first: 'Mike',
+                last: 'Doe',
+            },
+            gender: 'male',
+            title: 'ADMIN',
+            sections: ['Dashboard', 'User Profiles', 'Account', 'Generic'],
+        };
+        function checkUserPermission(user) {
+            var firstName = user.name.first;
+            var lastName = user.name.last;
+            var title = user.title;
+            var permissions = user.sections.join(', ');
+            switch (title) {
+                case 'normal': {
+                    console.log(firstName + ', ' + lastName + ' are titluri de NORMAL si are permisiunile de ' + permissions);
+                }
+                    break;
+
+                case 'ADMIN': {
+                    console.log(firstName + ', ' + lastName + ' are titluri de ADMIN si are permisiunile de ' + permissions);
+                };
+                    break;
+                default: console.log('Unloknown User. Tell us who you are!');
+            }
+        }
+        checkUserPermission(user1);
+
+        // 1 Scrieti o functie de tip named function denumita greatestNrBetween care:
+        // - Primeste ca argumente doua numere
+        // - Returneaza numarul care este mai mare
+        // Apelati functia de doua ori si afisati pe ecran textul: “Numarul mai mare dintre 5 si 10 este 10“
+
+
+        function greatestNrBetween(a, b) {
+            if (a > b) {
+                console.log('Numarul mai mare dintre ' + a + ' si ' + b + " este " + a);
+                return a;
+            } else if (a === b) {
+                console.log('Numerele sunt egale');
+                return a;
+            }
+            else {
+                console.log('Numarul mai mare dintre ' + a + ' si ' + b + " este " + b);
+                return b;
+            }
+        }
+        greatestNrBetween(5, 10);
+        greatestNrBetween(5, 5);
+        greatestNrBetween(900, 2);
+
+
+
+
+        // 2. Scrieti o functie de tip function expression asociata cu numele helloWorldInLang care:
+        // - Primeste ca argument codul unei limbi: “en”, “es”, “de”
+        // - Returneaza “Hello World” pentru limba corespunzatoare ( cel putin 3 limbi )
+        // - Daca limba nu este specificata, trebuie sa returneze textul pentru limba engleza
+        // Apelati functia pentru fiecare caz in parte.
+
+
+        var helloWorldInLang = function (lang) {
+            switch (lang) {
+                case 'en': {
+                    console.log('Hello World!');
+                }
+                    break;
+                case 'es': {
+                    console.log('Holla Mundo!');
+                }
+                    break;
+                case 'de': {
+                    console.log('Hallo World!');
+                }
+                    break;
+                default: console.log('Hello World!');
+            }
+        }
+
+        helloWorldInLang('en');
+        helloWorldInLang('es');
+        helloWorldInLang('de');
+        helloWorldInLang('ro')
+
+// tema partea 1 
+// exercitiu 1,5,6,7,8,9,10,11
+//tema partea 1
+// exercitiul 4,5,6,7
+//tema partea 2
+// tema de la subsol 4,5,6
+
+
+        // function variabila(number){
+        // if (number > 10) {
+        //     console.log(number + 'este mai mare deact 10');
+        // } else if(number > 1) {
+        //     console.log(number + ' este mai mare decat 1')
+        // } else {
+        //     console.log('Nu ne intereseaza ce numar este');
+        // };
+        // };
+        // console.log(variabila(8));
+
+
+    // else if(number<9){
+    //     console.log('asta da')
+    // }
+
+
+    </script>
+
+<body>
+    <h1>JavaSript</h1>
+
+</body>
+</head>
+
+</html>

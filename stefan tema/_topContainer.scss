@@ -1,0 +1,54 @@
+$backgroundimage: url(https://www.bu.edu/files/2020/02/Resize-iStock-1156362301.jpg);
+$color: white;
+* {
+  margin: 0;
+}
+.topContainer {
+  background-image: $backgroundimage;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 200px;
+  border-bottom: solid 5px rgb(211, 85, 12);
+}
+.topPart {
+  text-align: center;
+}
+h3 {
+  font-size: 10px;
+  padding: 5px;
+}
+.topIcon {
+  height: 70px;
+  width: 70px;
+}
+.bottomPart {
+  color: $color;
+  padding-right: 60%;
+  padding-left: 4%;
+}
+#topList li {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+  display: inline;
+  overflow: hidden;
+}
+.topListReferential {
+  color: black;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.badges {
+  margin-top: 30px;
+}
+.topBadge1 {
+  padding: 30px;
+  padding-left: 4%;
+}
+.topBadge2 {
+  padding-right: 50%;
+}
+.topBadge2 img {
+  font-weight: 129px;
+  height: 45px;
+}

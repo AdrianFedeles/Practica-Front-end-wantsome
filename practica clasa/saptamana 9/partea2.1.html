@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JAVASCRIPT dom</title>
+    <meta charset="UTF-8">
+    
+</head>
+<body>
+
+
+<!-- traversam D.O.M. -->
+
+<ul>
+    <li>Monday</li>
+    <li>Thisday</li>
+    <li>Wensday</li>
+</ul>
+
+    <script>
+
+
+/*traversarea D.O.M.*/
+
+
+    const ul = document.getElementsByTagName('ul')[0];
+    // console.log(ul.childNodes);
+    //console.log(ul.children);
+    // console.log(ul.firstElementChild);
+
+    const middleElement = ul.firstElementChild.nextElementSibling;
+    console.log(middleElement);
+
+
+    const firstElement = middleElement.previousElementSibling;
+    console.log(firstElement);
+
+    const lastElement = middleElement.nextElementSibling;
+    console.log(lastElement);
+
+
+    firstElement.style.color = 'red';
+    middleElement.style.color = 'lime';
+    lastElement.style.color = 'blue';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*TEMA  https://codepen.io/oviduzz/pen/WWZjjV*/
+    </script>
+</body>
+
+</html>

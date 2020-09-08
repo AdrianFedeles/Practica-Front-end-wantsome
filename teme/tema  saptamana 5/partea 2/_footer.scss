@@ -1,0 +1,11 @@
+footer {
+    text-align:center;
+    color:rgb(33, 6, 187);
+    padding: 1%;
+    font-size: 15px;
+}
+@media only screen and (max-width: 800px){
+    footer{
+        color: rgb(255, 60, 0);
+    }
+}

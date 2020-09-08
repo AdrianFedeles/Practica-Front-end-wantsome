@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JS</title>
+  <meta charset="UTF-8">
+  <script>
+    /*
+    //Ex1
+    //Scrieti o functie multiplyByTen care atunci cand o apelam cu console.log(multiplyByTen(6)) sa avem 60 rezultat.
+    
+    
+    //function multiplyByTen(a){ //definim functia numita multiplyByTen si ii atribuim 1 valore a
+      //acum ca sa ne dea rezultatul 60 trebuie sa facem un calcul cu inmultire 6 *10care este = cu 60
+     // multiplyByTen = a * 10; //scriem multiplyByTen (numele functiei noastre) = cu a(valoarea functiei multiplyByTen) o inmultim cu 10
+     // return  multiplyByTen; //cerem sa rezolve functia si sa ne returneze rezultatul dintre a * 10
+    //}
+     //console.log(multiplyByTen(9)); // ii fan functiei noastre multiplyByTen o valoare data de noi care sa o calculeze mai departe la a=6=>6*10=>=60(putem pune ori ce numar in acel console.log(multiplyByTen(...)))
+    
+    
+    //Ex2
+    //Scrieti o functie myNameIs care sa ia un singur parametru si cand o apelam cu numele nostru sa returneze "Numele meu este ___"
+    
+    
+    // function myNameIs (nume) {//facem o functie numita myNameIs cu parametrul nume
+    //   myNameIs = "Numele meu este " + nume + ".";// atribuim functiei noastre myNameIs  ii atribuim valoarea "Numele meu este " + nume + "."; pentru a o concatena
+    //   return myNameIs; // facem un call de numele functiei si apoi un console.log(myNameIs("Adrian"))
+    // }
+    // console.log(myNameIs("Adrian"));
+    
+    
+    //Ex3 
+    //Scrieti o functie care sa transforme un numar in string.
+    
+    
+    //function myFunction(a) {//avem o functie care o denumim myFunction si ii dam valoarea a;
+    //  var num = a.toString(); //facem o variabila denumita num; si in interiorul variabilei facem operatiunea de transformare a numarului in sting; valoarea functiti (a) data de conle.log prin apelarea numeliui functiei  myFunction si 'a'  l-am inlociut cu 15 in cazul nostru
+    //  return num;//ii cerem variabilei noastre 'num' sa returneze operatiunea de transformare a numarului in string.
+    //}//apoi o apelam prin console.log()
+    //console.log(myFunction(15));//apelam prin console.log numele functiri noastre cu numarul 15 in loc de 'a' deoarece  15 va merge inlocuit in valoarea functiei noastre va intra in variabila noastra numita 'num' ce va rezulta ca 15.toString si ii cerem varianilei noastre 'num 'sa returneze rezultatul transformarii ceea ce inseamna ca num preia rezultatul functiei noastre numita 'myFunction' si va deveni 'num' adica num este myFunction si o apelam prin console.log(myFunction(numar oare care)) 
+    
+    
+    
+    //Ex4 
+    //Scrieti o functie care sa returneze patratul numarului pe care-l dam ca si argument.
+    
+    //facem o functie ce o numim myFunctie cu valoarile a,b;
+    //facem o variabila cu numele patrat  si sa calculeze patratul functiei noastre;
+    //chemam variabila 
+    //facem console.log de myFunction si o valoare numerica in paranteze.
+    
+    
+    // function myFunction (a,b){
+    //   var patrat = Math.pow(a, b);
+    //   return patrat;
+    // }
+    // console.log(myFunction(2,2));
+    
+    
+    //Ex5
+    //Scrieti o functie numita aflaViitorul care sa aiba 4 parametrii -  numele jobului, compania, in cati ani, si cati bani - ar trebui sa returnam "Eu voi fi v in x ani la compania y si voi face z bani pe ora"
+    //Chemati/invocati/apelati acea functie de 3 ori cu diferite argumente.
+    
+    //facem o functie cu numele dat aflaViitorul; functia noastra va avea 4 argumente. 'v', 'x', 'y', 'z'.
+    //facem o fariabila ce o numim concat, in aceasta variabila facem concatenarea intre cele 4 argumente xv-x-y-z. in interior trebuie sa aparat textul concatenat cu argumentele:
+        //"Eu voi fi v in x ani la compania y si voi face z bani pe ora" adica: "Eu voi fi " + v + "in " + x + " ani la compania" + y + " si voi face" + z + " bani pe ora."
+    //chemam variabila voastra concat
+    //o apelam de 3 ori cu diferite argumente: 
+    //console.log(v,x,y,z);v = farmacist, x = 3, y = catena, z = 5 $:
+    //console.log(v,x,y,z);v = developer, x = 5, y = Centric, z = 50 Euro:
+    //console.log(v,x,y,z);v = astronaut, x = 1000, y = Nasa, z = 500000 puli Bwatsuaneze:
+    
+    // function aflaViitorul (v,x,y,z){
+    //   var concat = "Eu voi fi " + v + " in, " + x + " ani, la compania, " + y + " si voi face " + z + " bani pe ora.";
+    //   return concat;
+    // }
+    // console.log(aflaViitorul("Farmacist",3,"Catena","$" + 5));
+    // console.log(aflaViitorul("developer",5,"Centric",50 + " Erueo"));
+    // console.log(aflaViitorul("astronaut",1000,"Nasa",500000 + " puli Bwatsuaneze"));
+    
+    //Ex6
+    //Scrieti o functie care sa calculeze cati ani are o pisica in ani pisicesti avand in vedere ca 1 an de om = 7 ani de pisica.
+    // functia are 1 singur parametru - deci va accepta 1 singur argument.
+    // Rezultatul trebuie sa fie "Pisica mea are xx ani in ani pisicesti"
+    //BONUS - adaugati un alt parametru care reprezinta varsta noastra si obtinem la final varsta pisciii relatata la varsta noastra.
+    
+    //1 an de om = 7 ani de pisica
+    //facem o functie numita calculAniPisicaOm ii punem 2 parametri aniiMei si aniiPisicii.
+    //faceem o variabila numita calculatorPisi unde calculam valoarea functiei aniiPisicii *7
+    //facem o variabila numita calculatorOm unde calculam valoarea functiei aniiMei/7
+    
+    //facem un return ce sa ne returneze numele variabilei unde se calculeaza 
+    //facem un console.log(calculAniPisica())
+    
+    // function calculAniPisicaOm (aniiMei,aniiPisicii){
+    //   var calculatorPisi = aniiPisicii * 7;
+    //   var calculatorOm = aniiMei % 7;  
+    //   console.log("Pisica mea are " +calculatorPisi + " ani in ani pisicesti.");
+    //   console.log("Iar eu am " + calculatorOm + " ani pisicesti.")
+    // }
+    // calculAniPisicaOm( 13 , 1 );
+    
+    
+    //Ex7
+    // Vreau sa scriu o functie ce sa calculeze pentru urmatorii X ani cate cani de cafea voi bea
+    // Functia accepta ca parametrii years si coffePerDay.
+    // Rezultatul va fi "In urmatorii X ani voi bea in total Y cani de cafea"
+    
+    //facem o functie myFunction care va avea ca valori parametri years si coffePerDay
+    //facem o fvriabila numita calcul1 care va calcula coffePerDay%24
+    //von atribui valorii years calcul1*365zile intr-un am
+    //facem un console.log de calcul1 si years care va fi: console.log("In urmatorii" + calcul1 + " ani voi bea in total" + years + " cani de cafea");
+    //v-om apela din exteriorul fuctiei fara console,log ci asa: myFunction(); intre(vom pune cate cafele bem intr-o zi si el calculeaza cate cafele bem intr-un an de exemplu.)
+    
+    //"In urmatorii 1 ani voi bea in total 365 cani de cafea"
+    
+    
+    function myFunction (coffePerDay,years){
+        var calcul1 = coffePerDay%24;
+        years = calcul1*365
+        console.log("In urmatorii " + calcul1 + " ani voi bea in total " + years + " cani de cafea.");
+    };
+    myFunction(1);
+    myFunction(10);
+    myFunction(1.1);
+    myFunction(-1);
+    myFunction(-1.1);
+    myFunction("a");
+    
+    
+    //EX8 BONUS 
+    // Faceti 2 functii una calculateCelsiusToFarenheit() si una calculateFarenheitToCelsius() unde sa facem conversia dintre celsius si farenhite.
+    // rezultatul trebuie sa fie "X grade Celsius reprezinta Y grade Farenhite"
+    // folositi https://www.mathsisfun.com/temperature-conversion.html ca si referinta pentru calcul.
+    mai dregraba https://www.rapidtables.com/convert/temperature/fahrenheit-to-celsius.html
+    
+    
+    //facem o fuctia prima calculateCelsiusToFarenheit(Celsius); unde aveam ca valori Farenhite
+    
+    //facem variabila conversieInFarenhite unde  Celsius×9/5+32=32°Farenhite
+    
+    //facem doua functie  calculateFarenheitToCelsius(Farenhite);
+    
+    //facem o variabila conversieInCelsius unde (Farenhite-32)×5/9=-17.777777778°Celsius
+    
+    //facem un console.log unde scriem: Celsius + " grade Celsius reprezinta " + conversieInFarenhite + " grade Farenhite."
+    
+    //adica console.log( Celsius + " grade Celsius reprezinta " + conversieInFarenhite + " grade Farenhite.")
+    
+    //facem un console.log unde scriem: Farenhite + "grade Farenhite reprezinta " + conversieInCelsius + "grade Celsius."
+    
+    //cadica console.log(Farenhite + "grade Farenhite reprezinta " + conversieInCelsius + "grade Celsius.");
+    
+    function calculateCelsiusToFarenheit(Celsius){
+      var conversieInFarenhite = Celsius * 9/5+32;//=32°Farenhite
+      return "Cand afara sunt " + Celsius + "°C (Celsius) sunt de fapt, " + conversieInFarenhite + "°F (Farenhite)."
+    }
+    
+    function calculateFarenheitToCelsius(Farenhite){
+      var conversieInCelsius = (Farenhite-32)*5/9 //-17.777777778 celsius 
+      return "Cand afara sunt " + Farenhite + "°F (Farenhite) sunt de fapt, " + conversieInCelsius + "°C (Celsius)."
+    }
+    
+    console.log(calculateCelsiusToFarenheit(37));
+    console.log(calculateFarenheitToCelsius(37));
+    
+    
+    //Ex1 : La ce index intalnim cuvantul 'trece', dar cuvantul 'javascript'? Scrieti si metodele folosite.
+    var str = "Daca te simti bine, nu te ingrijora, trece!";
+    // facem o variabila strDosition unde ii atribuim operatiunea str.indexOf(trece!)
+    //facem un console.log (strDosition)
+    //Raspuns: 
+    var strDosition = str.indexOf("trece");
+    var strDosition1 = str.indexOf("javascript");
+    console.log(strDosition1);
+    console.log(strDosition);
+    
+    // Ex2.0: Returnati stringul Kiwi folosind metoda slice() cu indexi pozitivi si apoi negativi.
+    // Ex 2.1: Returnati toate fructele incepand de la 'Lemon'.
+      var fruits = "Apple, Lemon, Plum, Kiwi";
+      var rezultat1 = fruits.slice(20,24);
+      var rezultat2 = fruits.slice(20,23);
+      var rezultat3 = fruits.slice(-1.-3);
+      var rezultat4 = fruits.slice(7);
+    
+    console.log(rezultat1);
+    console.log(rezultat2);
+    console.log(rezultat3);
+    console.log(rezultat4);
+    
+    // Ex 3: Returnati stringul 'Plum' folosind metoda substr()
+      var moreFruits = "Apple, Lemon, Plum, Kiwi";
+      var str = moreFruits.substr(14,4);
+      console.log(str);
+    
+    // Ex 4: Inlocuiti 'Mia Kalifa' cu numele vostru folosind o metoda pe stringuri
+    // bonus: Inlocuiti "Sasha" cu numele vostru in tot stringul de mai jos.
+    //    var replaceName = "Eu sunt Mia Kalifa, doctor docent in matematica";
+    //    var str = replaceName.replace("Mia Kalifa","Fedeles Adrian");
+    //    console.log(str);
+    
+    var bonusName = "Sasha este o persoana de nota 10, Sasha invata javascript(mai nou) "
+    
+    var bonusName = "Sasha este o persoana de nota 10, Sasha invata javascript(mai nou), pentru ca Sasha e un jmecher si are impresia ca Sasha sunt defapt Sasha2 "
+     var str1 = bonusName.replace(/sashA/gi,"Fedeles Adrian");//facem o functie str1 in care ii scriem numele variabile pentru a putea 
+     aplea textul ei ca valoare, bonusName.replace(pentru a putea inlocui stringuri din variabila //bonusName), in ()avem comentat stringul 
+     Sashasi ii atribuim o inlocuire globala prin metaoda g sau gi, functioneaza astfel: comentam stringul Sashapentru identificare in valoarea 
+     variabilei bonusName cuvantul Sasha si sa fie //inlocuit ori de cate ori il vede in sirul nostru de stringuri.este un semi caseSenzitive
+     (avem "Sasha" putem modifica lireta S cu s si a cu A ca va functiona, alte modificari aduse in interior nu va functiona)
+    
+     console.log(str1);
+    
+    // Ex5: Vreau ca toate literele sa fie intai cu caractere mici si apoi cu caractere mari
+    
+    
+    
+       var text = "24 de orE intr-o zi, 24 de beRi intr-o lAda. Vreo coincidenta?"
+       var str1 = text.toLowerCase();
+       var str2 = text.toUpperCase();
+    
+       console.log(str1);
+       console.log(str2);
+       
+       console.log(text.toLowerCase());
+       console.log(text.toUpperCase());
+       
+    
+    // Ex6: Vreau sa am la final un singur string cu toate celalte stringuri (indentati calumea, cu spatii unde e nevoie)
+    
+    
+       var text1 = "Când ai un";
+       var text2 = "ciocan";
+       var text3 = "in mana toate lucrurile ti se par";
+       var text4 = "cuie";
+    var str4 = text3.replace(" toate",", toate");
+    var str1 = text1.concat(" ",text2);
+    var str2 = str1.concat(" ",str4);
+    var str3 = str2.concat(" ",text4,".");
+    console.log(str3);
+    
+    
+    // Ex7: Vreau sa stiu intai ce litera se afla pentru indexul 6, apoi ce unicode are aceasta litera, si apoi vreau sa o accesez cu 'property access'
+      var word = "Mamaliga";
+    var str1 = word.charAt(6);
+    console.log(str1);
+    var str2 = word.charCodeAt(6);
+    console.log(str2);
+    var str3 = word[6];
+    console.log(str3);
+    
+    // Ex8: Vreau sa am o noua variabla care sa cotina un array format din toate stringurile de mai jos care sunt despartite de '|'
+      var cars = "Toyota|Mazda|Tesla|Hyundai|Dacia";
+    var str1 = cars.split();
+    console.log(str1);
+    
+    
+    //Big BONUS 
+    // Se dau variabilele de mai jos, vreau sa ajung la rezultatul "NU EXISTA INTREBARI PROASTE" fara sa modific valorile celor 2 variabile;
+      var firstWord = 'Nu exista';
+      var secondWord = 'raspunsuri proaste';
+    
+    var str1 = firstWord.concat(" ",secondWord,".");
+    var str2 = str1.toUpperCase();
+    
+    console.log(str1);
+    console.log(str2);
+    
+    //Ex1: Creati un array care sa aiba length-ul 5. Demonstrati ca length-ul este 5.
+    var bike = ["BMX","Shiumano","Pegas","DHS","1",2,true];/*facem o variabila care are 5valori*/
+    //console.log(bike.length)/*facem console.log de numele variabilei si ii mai scriem .length pentru a vedea cat de mung este array-ul.*/
+    /*spune ca lungimea array-ului este de 5 cuvinte.*/
+    /*array-ul poate avea striguri numere bolean dar nu caractere speciale cum ar fi semnul exclamarii!*/
+    //Ex2: Din cele 2 arrayuri de mai jos, folositi o metoda sa avem unul singur
+    //var array1 = ['Car', 'Vehicle'];
+    //var array2 = ['House', 'Job'];
+    //var array3 = array1.concat(array2);/*facem concatenare de cele doua array-uri prin crearea de a III a  variabila unde ii spunem
+    //variabila 1 (Array1) .concat si in paranteze trecem variabila 2 (array2*/
+    //console.log(array3)/*facem console log de variabila 3 si ne lipeste untr-un singur array mai mare lele 2 array-uri mai mici.*/
+
+    //Ex3: Creati 2 variabile, una care sa dea true si una care sa dea false atunci cand folosim metoda isArray()
+    /*facem 2 variabile*/
+    /* una ce va da ca array-ul nostru este adevarat,*/
+    //var arrayTrue = ['fete','flori','baieti','muzicanti'];
+    /*alt array ca este fals ca nu e array */
+    //var arrayFalse = 'Maria';
+    /*facem 2x console.log de variabila constructor Array.isArray si in paranteze  arrayTrue si inchidem parantezele*/
+    //console.log(Array.isArray(arrayTrue));
+    //console.log(Array.isArray(arrayFalse));
+
+
+    //Ex4: Folositi o metoda pe arrayuri avand in vedere variabila de mai jos, sa obtinem rezultatul "one and two and three and four and five" 
+    // fara sa modificati variabila initiala
+    //var numbers = ['one', 'two', 'three', 'four', 'five'];/*avem variabila numbers cu valoarea array-ului*/
+    /*facem o a II a fariabila pentru a ii putea da valoarea numbers.join()*/
+    //var result1 = numbers.join();
+    /*facem console log de a IIa variabila pentru a ne face din array de stringuri in simplu string*/
+    //console.log(result1);
+
+    //Ex5: Adaugati 2 elemente noi in arrayul de mai jos
+    //var cars = ['Tesla', 'Dacia'];
+    /*nu facem nici o bariabila ci variabilei noastre car ii atribuim o conditie in cazul nostru de adaugare in interiorul array-ului si il aseaza in ultimile locuri*/
+    //cars.push("Aro","Bugatti");
+    /*facem un console.log de cras*/
+    //console.log(cars);
+    /* am facut in prima faza o alta variabila result2 care primea valoarea cars.push("aro","bugatti") dar la console.log nea afisat numarul 4*/
+
+
+    //Ex6: Avand rezultatul de la exercitiul anterior, scoateti ultimul element intrat.
+
+    /*scoatem ultimul element din array adica bugatti prin metoda pop() si il scoate pe ultimul*/
+    //cars.pop();
+    /*facem un console.log de cras*/
+    //console.log(cars);
+
+
+    //Ex7: Avand rezultatul exercitiului anterior, adaugati elementul 'Dodge' la inceputul arrayului
+
+    /*adaufam un element la inceputul unui array cu metoda unshift()*/
+    //cars.unshift('Dodge');
+    /*facem un console.log de cras*/
+    //console.log(cars);
+
+
+    //Ex8: Avand rezultatul exercitiului anterior, inversati ordinea elementelor din array
+    /*facem inversarea elementelor din array prin metoda reverse()*/
+    //cars.reverse();
+    /*facem un console.log de cras*/
+    //console.log(cars);
+
+
+    //Ex9: Avand in vedere rezultatul anterior Folositi o metoda pe arrayuri care sa inlocuiasca incepand de la elementul 'Tesla' si sa adauge alte 2 elemente noi - splice();
+
+    /*folosind metoda .splice() adauga sau scoate elementele din array*/
+    //cars.splice(2,1,'Mercedes', 'Kraz');
+    //cars.splice(2,-1,'Mercedes', 'Kraz');/*in cazul acesta 'tesla' si 'dodge' vor fi mutati ultimii si pe locurile lor vor fi asezate 'mercedes' si 'Kraz' si apoi 'tesla' si 'dodge'*/
+    //console.log(cars);
+
+
+    //Ex10: Sortati urmatorul array de la mic la mare si de la mare la mic 
+
+    /*avem array-ul dat*/
+    //var arrayNumbers = [1, 5, 20 ,30, 100];
+    /*scriem arrayNumbers.sort pentru a sorta cifrele in felul urmator 100,1,20,30,5,*/
+    //    arrayNumbers.sort(function (a,b){/* si in parantezele lui .sort trecem functia anonima(a,b) si intre parantezele functiei anonima ei trecem a,b ca variabile */
+    //      return b-a;/*apelam doar valorile functiei anonima a,b din functia noastra myfunction si ii punem b-a adica b sa se scada spre a*/
+    //    })
+    // /*sa ne afiseze grup descrescator*/
+    //  console.log(arrayNumbers);
+
+    //arrayNumbers.sort(function (a, b) {
+    //    return a - b;
+    //});
+    //console.log(arrayNumbers);
+    /* in acelasi bloc de sortare daca folosim '-' si schimbam variabilele a,b (crescator a-b )*/
+    //arrayNumbers.sort(function (a, b) {
+    //    return a - b;
+    //});
+    //console.log(arrayNumbers);
+    /* sau b,a (descrescator b-a)*/
+    //arrayNumbers.sort(function (a, b) {
+    //    return b - a;
+    //});
+    //console.log(arrayNumbers);
+
+    /*in acelasi bloc de sortare daca folosim  '+' si schimbam variabilele a,b (descrescator a+b)*/
+    //arrayNumbers.sort(function (a, b) {
+    //    return a + b;
+    //});
+    //console.log(arrayNumbers);
+
+    /* sau b,a (crescator b+a)*/
+    //arrayNumbers.sort(function (a, b) {
+    //    return b + a;
+    //});
+    //console.log(arrayNumbers);
+
+    //Ex11 : Aveti urmatorul array - folositi o functie care sa ia arrayul ca argument si sa-l returneze ordonat
+    //var fruitsArray = ["Apple", "Lemon", "Banana", "Orange", "Bere", "Mici"]
+    /*facem sa ni se sorteze fruitsArray.sort() pentru sortare in ordine alfabetica de la prima litera restul de litere le ignora */
+    //fruitsArray.sort();
+    //console.log(fruitsArray)
+    /*
+
+
+    /*1. Scrieti o functie de tip named function denumita greatestNrBetween care:
+    - Primeste ca argumente doua numere
+    - Returneaza numarul care este mai mare
+    Apelati functia de doua ori si afisati pe ecran textul: “Numarul mai mare dintre 5 si 10 este 10“*/
+    /*
+
+    function greatestNrBetween(a, b) {
+      if (a > b) {
+        console.log('Numarul mai mare dintre ' + a + ' si ' + b + ' este ' + a + '.');
+        return a;
+      } else if (a === b) {
+        console.log('Numerele ' + a + ' si ' + b + ' sunt egale');
+      } else {
+        console.log('Numerul mai mare dintre ' + a + ' si ' + b + ' este ' + b + '.');
+        return b;
+      }
+    }
+    greatestNrBetween(1000, 500);
+    greatestNrBetween(50, 50);
+    greatestNrBetween(500, 1000);
+*/
+    /*ori ce nr introdus in console.log sa fie divizibil si 3 , 5, sau 3 si 5.*/
+    /*
+    function divizibil(a) {
+      if (a % 3 === 0 && a % 5 === 0) {
+        console.log('Numarul  ' + a + ' este divizibil cu 3. Si numarul ' + a + ' este divizibil cu 5. Apoi, numarul ' + a + ' este divizibil cu 3 si 5.');
+        return a;
+      } else {
+        console.log('Numarul ' + a + ' nu este divizibil cu 3 si 5');
+      }
+    }
+    divizibil(3);
+    divizibil(5);
+    divizibil(15);
+    divizibil(1);
+
+*/
+    //sau
+
+
+    /*
+    function divizibil(a) {
+      if (a % 3 === 0 && a % 5 === 0) {
+        console.log('Numarul ' + a + ' este divizibil cu 3 si 5');
+        return a;
+      } else if (a % 3 === 0) {
+        console.log('Numarul ' + a + ' este divizibil cu 3.');
+        return a;
+      } else if (a % 5 === 0) {
+        console.log('Numarul ' + a + ' este divizibil cu 5.');
+        return a;
+      } else {
+        console.log('Numarul ' + a + ' nu este divizibil cu nici unu din numerele cerute.');
+      };
+    };
+
+    divizibil(3);
+    divizibil(5);
+    divizibil(15);
+    divizibil(1);
+
+
+    var salut = function (language) {
+      switch (language) {
+        case 'en': {
+          console.log('.................................');
+          console.log('Now it`s English!');
+          console.log('.................................');
+          console.log('Hi man, what are you doing?');
+          console.log('.................................');
+        }
+          break;
+        case 'ro': {
+          console.log('.................................');
+          console.log('Acum este romana!');
+          console.log('.................................');
+          console.log('Salut omule, ce faci?');
+          console.log('.................................');
+        }
+          break;
+        case 'es': {
+          console.log('.................................');
+          console.log('¡Ahora es española!');
+          console.log('.................................');
+          console.log('Hola hombre que estas haciendo?');
+          console.log('.................................');
+        }
+          break;
+        case 'gr': {
+          console.log('.................................');
+          console.log('Τώρα είναι Έλληνα!');
+          console.log('.................................');
+          console.log('Γεια σου, τι κάνεις;');
+          console.log('.................................');
+        }
+          break;
+        case 'de': {
+          console.log('.................................');
+          console.log('Sie ist jetzt Deutsche!');
+          console.log('.................................');
+          console.log('Hallo Mann, was machst du?');
+          console.log('.................................');
+        }
+          break;
+        default:
+          console.log('.................................');
+          console.log('Las-o naibii, Rusa chiar nu stiu!');
+          console.log('.................................');
+      }
+    }
+    salut('en');
+    salut('ro');
+    salut('es');
+    salut('gr');
+    salut('de');
+    salut('ru');
+*/
+
+
+
+
+    /*
+
+
+
+
+
+    */
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+<body>
+  <h1>JavaSript</h1>
+</body>
+</head>
+
+</html>

@@ -1,0 +1,105 @@
+// $backgroundimage: url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2020%2F06%2F09%2Fgoogle-maps-app-GMAP0620.jpg);
+$color: white;
+* {
+  margin: 0;
+}
+.containerTop {
+  background-image: url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2020%2F06%2F09%2Fgoogle-maps-app-GMAP0620.jpg);
+  background-size: cover;
+  background-position: 20% 50%;
+  background-repeat: no-repeat;
+  padding-bottom: 300px;
+  border-bottom: solid 5px rgb(33, 6, 187);
+  
+}
+.topContent {
+  text-align: center;
+}
+.paragraphLogo {
+  font-size: 15px;
+  padding: 5px;
+  color: rgb(255, 60, 0);
+  text-shadow: 1px 1px 0px #000000;
+  text-align: center;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+}
+.h1Logo {
+  color: rgb(255, 255, 255);
+  font-size: 55px;
+  font-family: "Niconne", cursive;
+  text-shadow: 5px 5px 0px #eb452b98, 10px 10px 0px #d3e66d, 15px 15px 0px #72dfc5,
+    20px 20px 0px #09acac, 25px 25px 0px #156181ce, 30px 30px 0px #c11a2b88;
+}
+.topBottomPart {
+  color: $color;
+  padding-right: 80%;
+  padding-left: 5%;
+  text-align: center;
+  width: 25%;
+}
+.topBottomPart h4{
+  font-size: 30px;
+  margin-bottom: px;
+}
+.topBottomPart p{
+  // margin-left: 40.7px;
+  padding: 50px;
+  text-align: center;
+  
+}
+#lists li {
+  list-style-type: none;
+  margin: 1px; 
+  padding: 4%;
+  display: inline;
+  overflow: hidden;
+  position: relative;
+  bottom: 0%;
+}
+.list1 {
+  color: blue;
+  text-decoration: none;
+  margin-top: 110px;
+  position: absolute;
+}
+
+.badges {
+  margin-top: 50px;
+  margin-top: 100px;
+}
+.topBadge1 {
+  padding: 80px;
+  padding-left: 6%;
+}
+.topBadge2 {
+  padding-right: 50%;
+}
+.topBadge2 img {
+  font-weight: 10px;
+  height: 50px;
+}
+
+@media only screen and (max-width: 800px){
+  .list1{
+    color: rgb(255, 255, 255);
+    margin: 80px;
+  }
+  .containerTop{
+    background-image: url(https://scontent.fias1-1.fna.fbcdn.net/v/t1.0-9/118204843_366651744730205_8230020341205578005_o.jpg?_nc_cat=101&_nc_sid=e007fa&_nc_ohc=yPERU-Az0LcAX-8iCEq&_nc_ht=scontent.fias1-1.fna&oh=ee32f0b215c8bc685a9b50229f0a8288&oe=5F62FE5F);
+    border-bottom: solid 5px rgb(255, 60, 0);
+  }
+  .topBadge2{
+    padding-left: 30px;
+    padding-top: 50px;
+  }
+  .topBottomPart p{
+    width: 100%;
+  }
+  .topBottomPart h4{
+    width: 100%;
+    padding: 45px;
+  }
+}

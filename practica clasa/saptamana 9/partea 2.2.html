@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JAVASCRIPT Change the DOM!</title>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <!-- Change the DOM! -->
+    <p>This is element</p>
+
+    <ul>
+        <li>Banane</li>
+        <li>Struguri</li>
+    </ul>
+
+
+
+
+
+
+    <script>
+        // Change the DOM!
+
+        const parahraph = document.createElement('p')
+        console.log(parahraph);
+        parahraph.textContent = 'Hello fron the other side!';
+        console.log(parahraph)
+        parahraph.innerHTML = 'Hello fron <strong> the other</strong> side!';
+        console.log(parahraph);
+
+        /*adaugat un element nou in lista*/
+        const list = document.querySelector('ul');
+        const newListItem = document.createElement('li');
+        newListItem.textContent = 'Portocala';
+
+        console.log(newListItem);
+        list.appendChild(newListItem);
+
+        /*adauga intr-o pozitie specifica*/
+        const listItem2 = document.createElement('li');
+        listItem2.textContent = 'Mere';
+        /*prima metoda*/
+        //list.insertBefore (listItem2, list.firstElementChild.nextElementSibling);
+        //list.insertBefore (listItem2, list.firstElementChild.nextElementSibling.nextElementSibling);
+
+        /*a doua metoda*/
+        list.insertBefore (listItem2, list.children[0]);
+        //list.insertBefore (listItem2, list.children[1]);
+        //list.insertBefore (listItem2, list.children[2]);
+        //list.insertBefore (listItem2, list.children[3]);
+        
+        /*modifica  itemele din lista*/
+
+        const modifiedItem = document.createElement('li');
+        modifiedItem.textContent = 'Un alt fruct';
+
+        //list.replaceChild(modifiedItem, list.children[0]);
+        //list.replaceChild(modifiedItem, list.children[1]);
+        list.replaceChild(modifiedItem, list.children[2]);
+        //list.replaceChild(modifiedItem, list.children[3]);
+
+
+
+        /*remove child*/
+        list.removeChild(list.lastChild);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*TEMA  https://codepen.io/oviduzz/pen/WWZjjV*/
+    </script>
+</body>
+
+</html>

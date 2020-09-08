@@ -1,0 +1,394 @@
+.sectionTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #9a9c9c;
+}
+
+.contentSectionTitle i {
+  background-color: #2106bb;
+  border-radius: 50%;
+  color: #b6b5b5;
+  width: 45px;
+  height: 45px;
+  font-size: 25px;
+  line-height: 45px;
+}
+
+.imagPodium {
+  width: 100%;
+  height: 100px;
+  border-radius: 50%;
+  color: white;
+}
+
+.contentSectionTitle h3 {
+  color: #666565;
+  padding: 15px;
+}
+
+.contentSectionTitle {
+  width: 250px;
+  height: auto;
+  text-align: center;
+  padding: 30px;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+.contentSectionTitle p {
+  font-size: 15px;
+}
+
+.pNextGeneration {
+  text-align: center;
+  background-color: #031fbd;
+  padding: 2.5%;
+  font-size: 30px;
+  color: #a5a4a4;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+.pSeeHowItWorks {
+  text-align: center;
+  height: auto;
+  padding: 3.5%;
+  font-size: 40px;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+.sectionMiddle {
+  background-color: #535050;
+  color: #b8b3b3;
+}
+
+.middleTop {
+  height: 450px;
+  padding-top: 5%;
+}
+
+.middleTop img {
+  border-radius: 10%;
+  float: right;
+  margin-right: 40%;
+  height: 300px;
+}
+
+.h4MiddleTop {
+  text-align: center;
+}
+
+.h4MiddleTop i {
+  font-size: 30px;
+  margin-right: 12px;
+  background-color: #2106bb;
+  padding: 5px;
+}
+
+.middleTop h4 {
+  font-size: 25px;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+.pMiddleTop, .h4MiddleTop {
+  text-align: left;
+  width: 20%;
+  margin-left: 21.5%;
+  padding: 1%;
+}
+
+.pMiddleTop {
+  margin-left: 24%;
+  width: 100%;
+}
+
+.middleMiddle {
+  height: 450px;
+  padding-top: 5%;
+  background-color: #2b2a2a;
+}
+
+.pMiddleMiddle, .h4MiddleMiddle {
+  text-align: left;
+  width: 20%;
+  margin-left: 42.5%;
+  padding: 1%;
+}
+
+.h4MiddleMiddle i {
+  font-size: 30px;
+  margin-right: 10px;
+  background-color: #2106bb;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.middleMiddle img {
+  border-radius: 10%;
+  float: left;
+  margin-left: 22%;
+  height: 300px;
+}
+
+.pMiddleMiddle {
+  padding-left: 3.7%;
+}
+
+@media only screen and (max-width: 600px) {
+  .sectionTitle {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 500px;
+  }
+  .sectionMiddle {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 1909px;
+  }
+  .middleTop {
+    height: 500px;
+  }
+  .middleMiddle {
+    height: 800px;
+  }
+  .middleTop {
+    height: 500px;
+  }
+  .sectionTitle {
+    background-color: white;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 1000px;
+  }
+  .contentSectionTitle i {
+    color: white;
+    background-color: #ff3c00;
+  }
+  .pNextGeneration {
+    background-color: #ff3c00;
+  }
+  .middleTop h4 {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .middleTop p {
+    width: 50%;
+  }
+  .middleMiddle h4 {
+    text-align: center;
+  }
+  .h4MiddleMiddle i {
+    background-color: #ff3c00;
+  }
+  .h4MiddleTop i {
+    background-color: #ff3c00;
+  }
+}
+
+* {
+  margin: 0;
+}
+
+.containerTop {
+  background-image: url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2020%2F06%2F09%2Fgoogle-maps-app-GMAP0620.jpg);
+  background-size: cover;
+  background-position: 20% 50%;
+  background-repeat: no-repeat;
+  padding-bottom: 300px;
+  border-bottom: solid 5px #2106bb;
+}
+
+.topContent {
+  text-align: center;
+}
+
+.paragraphLogo {
+  font-size: 15px;
+  padding: 5px;
+  color: #ff3c00;
+  text-shadow: 1px 1px 0px #000000;
+  text-align: center;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+}
+
+.h1Logo {
+  color: white;
+  font-size: 55px;
+  font-family: "Niconne", cursive;
+  text-shadow: 5px 5px 0px #eb452b98, 10px 10px 0px #d3e66d, 15px 15px 0px #72dfc5, 20px 20px 0px #09acac, 25px 25px 0px #156181ce, 30px 30px 0px #c11a2b88;
+}
+
+.topBottomPart {
+  color: white;
+  padding-right: 80%;
+  padding-left: 5%;
+  text-align: center;
+  width: 25%;
+}
+
+.topBottomPart h4 {
+  font-size: 30px;
+  margin-bottom: px;
+}
+
+.topBottomPart p {
+  padding: 50px;
+  text-align: center;
+}
+
+#lists li {
+  list-style-type: none;
+  margin: 1px;
+  padding: 4%;
+  display: inline;
+  overflow: hidden;
+  position: relative;
+  bottom: 0%;
+}
+
+.list1 {
+  color: blue;
+  text-decoration: none;
+  margin-top: 110px;
+  position: absolute;
+}
+
+.badges {
+  margin-top: 50px;
+  margin-top: 100px;
+}
+
+.topBadge1 {
+  padding: 80px;
+  padding-left: 6%;
+}
+
+.topBadge2 {
+  padding-right: 50%;
+}
+
+.topBadge2 img {
+  font-weight: 10px;
+  height: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+  .list1 {
+    color: white;
+    margin: 80px;
+  }
+  .containerTop {
+    background-image: url(https://scontent.fias1-1.fna.fbcdn.net/v/t1.0-9/118204843_366651744730205_8230020341205578005_o.jpg?_nc_cat=101&_nc_sid=e007fa&_nc_ohc=yPERU-Az0LcAX-8iCEq&_nc_ht=scontent.fias1-1.fna&oh=ee32f0b215c8bc685a9b50229f0a8288&oe=5F62FE5F);
+    border-bottom: solid 5px #ff3c00;
+  }
+  .topBadge2 {
+    padding-left: 30px;
+    padding-top: 50px;
+  }
+  .topBottomPart p {
+    width: 100%;
+  }
+  .topBottomPart h4 {
+    width: 100%;
+    padding: 45px;
+  }
+}
+
+.sectionButtom {
+  background-color: #2106bb;
+  height: 1000px;
+  text-align: center;
+  color: white;
+}
+
+.h1SectionButtom {
+  padding-top: 60px;
+  font-size: 60px;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+.formBottom {
+  padding-top: 5%;
+}
+
+.formBottom input {
+  height: 30px;
+  width: 30%;
+  display: inline-block;
+  position: relative;
+}
+
+.formBottom label {
+  display: inline-block;
+  padding-top: 1.7em;
+  margin-right: 25%;
+}
+
+.formBottom textarea {
+  position: relative;
+  display: inline-block;
+  width: 30%;
+  height: 300px;
+}
+
+input[type="submit"] {
+  background-color: #500fe9;
+  color: white;
+  margin-right: 26%;
+  margin-top: 1%;
+  width: 55px;
+  height: 25px;
+  border: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .sectionButtom {
+    background-color: #ff3c00;
+  }
+  input[type="submit"] {
+    background-color: #94371a;
+    color: #cec8c8;
+    margin-right: 26%;
+    margin-top: 1%;
+    width: 10%;
+    height: 25px;
+    border: none;
+    margin-left: 50px;
+  }
+  .formBottom input {
+    width: 80%;
+    height: 40px;
+  }
+  .formBottom textarea {
+    width: 80%;
+    height: 100px;
+  }
+  .formBottom label {
+    padding-left: 90px;
+  }
+}
+
+footer {
+  text-align: center;
+  color: #2106bb;
+  padding: 1%;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+  footer {
+    color: #ff3c00;
+  }
+}
+/*# sourceMappingURL=stylesP2.css.map */
