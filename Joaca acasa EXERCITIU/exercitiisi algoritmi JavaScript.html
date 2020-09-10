@@ -291,8 +291,8 @@
     //Ex4: Folositi o metoda pe arrayuri avand in vedere variabila de mai jos, sa obtinem rezultatul "one and two and three and four and five" 
     // fara sa modificati variabila initiala
     //var numbers = ['one', 'two', 'three', 'four', 'five'];/*avem variabila numbers cu valoarea array-ului*/
-    /*facem o a II a fariabila pentru a ii putea da valoarea numbers.join()*/
-    //var result1 = numbers.join();
+    /*facem o a II a variabila pentru a ii putea da valoarea numbers.join()*/
+    //var result1 = numbers.join(' end ');
     /*facem console log de a IIa variabila pentru a ne face din array de stringuri in simplu string*/
     //console.log(result1);
 
@@ -341,36 +341,36 @@
     /*avem array-ul dat*/
     //var arrayNumbers = [1, 5, 20 ,30, 100];
     /*scriem arrayNumbers.sort pentru a sorta cifrele in felul urmator 100,1,20,30,5,*/
-    //    arrayNumbers.sort(function (a,b){/* si in parantezele lui .sort trecem functia anonima(a,b) si intre parantezele functiei anonima ei trecem a,b ca variabile */
-    //      return b-a;/*apelam doar valorile functiei anonima a,b din functia noastra myfunction si ii punem b-a adica b sa se scada spre a*/
-    //    })
-    // /*sa ne afiseze grup descrescator*/
-    //  console.log(arrayNumbers);
+    //arrayNumbers.sort(function (a, b) {/* si in parantezele lui .sort trecem functia anonima(a,b) si intre parantezele functiei anonima ei trecem a,b ca variabile */
+    //  return b - a;/*apelam doar valorile functiei anonima a,b din functia noastra myfunction si ii punem b-a adica b sa se scada spre a*/
+    //})
+    /*sa ne afiseze grup descrescator*/
+    //console.log(arrayNumbers);
 
     //arrayNumbers.sort(function (a, b) {
-    //    return a - b;
+    //  return a - b;
     //});
     //console.log(arrayNumbers);
     /* in acelasi bloc de sortare daca folosim '-' si schimbam variabilele a,b (crescator a-b )*/
     //arrayNumbers.sort(function (a, b) {
-    //    return a - b;
+    //  return a - b;
     //});
     //console.log(arrayNumbers);
     /* sau b,a (descrescator b-a)*/
     //arrayNumbers.sort(function (a, b) {
-    //    return b - a;
+    //  return b - a;
     //});
     //console.log(arrayNumbers);
 
     /*in acelasi bloc de sortare daca folosim  '+' si schimbam variabilele a,b (descrescator a+b)*/
     //arrayNumbers.sort(function (a, b) {
-    //    return a + b;
+    //  return a + b;
     //});
     //console.log(arrayNumbers);
 
     /* sau b,a (crescator b+a)*/
     //arrayNumbers.sort(function (a, b) {
-    //    return b + a;
+    //  return b + a;
     //});
     //console.log(arrayNumbers);
 
@@ -499,6 +499,153 @@
     salut('de');
     salut('ru');
 */
+
+
+    /*reluare exercitiu saptamana 6 partea 1 
+    Exercitiul 1*/
+    // var myArray = ['mere','pere','struguri','gutui','caise']
+    // var result = myArray.length;
+    // console.log(result);
+
+    /*exercitiul 2 */
+    // var array1 = ['Car', 'Vehicle'];
+    // var array2 = ['House', 'Job'];
+    // var result1 = array1.concat(array2);
+    // console.log(result1); 
+
+
+    /*exercitiul 3*/
+
+
+    // var myVar = [1, 2, 3, 4, 5];
+    // console.log(Array.isArray(myVar));/*true*/
+
+    // var myVar3 = ['mercedes', 'mazda', 'iarba', 'balon'];
+    // console.log(Array.isArray(myVar3));/*true*/
+
+    // var myVar4 = (1, 2, 3, 4, 5);
+    // console.log(Array.isArray(myVar4));/*false*/
+
+    // var myVar6 = ('mistang', 'subaru', 'honda', 'dacia');
+    // console.log(Array.isArray(myVar6));/*false*/
+
+    // var myVar7 = 'mama';
+    // console.log(Array.isArray(myVar7));/*false*/
+
+    // var myVar8 = 1;
+    // console.log(Array.isArray(myVar8));/*false*/
+
+    /*exercitiul 4*/
+
+    // var numbers = ['one', 'two', 'three', 'four', 'five'];
+    // var result = numbers.join(' end ');
+    // console.log(result);
+
+    // /*exercitiul 5*/
+
+    // var cars = ['Tesla', 'Dacia'];
+    // cars.push('Honda', 'Mercedes');
+    // /*exercitiul 6*/
+    // cars.pop();
+    // /*exercitiul 7*/
+    // cars.unshift('Dodge');
+    // /*exercitiul 8*/
+    // cars.reverse();
+    // /*exercitiul 9*/
+    // cars.splice(2,2,'Mazda','Buggati','Audi','Subaru')
+    // console.log(cars);
+
+
+    /*exercitiul 10*/
+
+
+    // var arrayNumbers = [1, 5, 20, 30, 100];
+    // arrayNumbers.sort(function (a, b) { return a - b });
+    // console.log(arrayNumbers);
+
+    // arrayNumbers.sort(function (a, b) { return b - a });
+    // console.log(arrayNumbers);
+
+    // arrayNumbers.sort();
+    // console.log(arrayNumbers);
+
+    /*exercitiul 11*/
+
+
+    // var fruitsArray = ["Apple", "Lemon", "Banana", "Orange", "Bere", "Mici"]
+    // fruitsArray.sort();
+    // console.log(fruitsArray);
+
+    /*//Ex4 
+    // Creati un obiect cu cateva proprietati
+    var casa = {
+      persoane: 4,
+      etaje: 2,
+      proprietar: 'Vasile',
+      oras: 'Harlau',
+    };
+    console.log(casa);
+
+    // "Copiati" obiectul printr-o metoda specifica obiectelor(vedeti pe google) si stocatil intr-o alta variabila
+    var copiereCasa = Object.assign(casa)
+    console.log(copiereCasa);
+
+    //Pe obiectul nou adaugam 2 noi proprietati
+
+    copiereCasa.pet = 'Azor';
+    copiereCasa.aniPet = 2;
+    console.log(casa);
+
+    //Avem obiectul de mai jos, folosind o metoda pe obiecte faceti "merge" intre cele 2 obiecte si salvati-l sub un nume nou.
+    myHouse = {
+      rooms: 3,
+      zone: "Bucium",
+      animals: 1
+    }
+
+    var merge = Object.assign(casa,myHouse);
+    console.log(merge)
+*/
+
+    // Ex5 
+    // Creati un obiect care sa contina un alt obiect in interorul lui cu 2 proprietati
+    /*
+        var masina = {
+          marca: 'Mercedes',
+          producator: 'Daimler',
+          roti: 4,
+          locuri: 5,
+          prezoane: 5,
+          motor: {
+            cilindri: 4,
+            aspirat: 'turbina',
+          },
+          audio: 'da',
+          anFabricatie: 2020,
+          propietari: 'primul propietar'
+        }
+        console.log(masina);
+        //Accesati proprietatile acelui obiect si stocati key-le intr-o variabila separata.
+    
+        var keyWords = Object.keys(masina.motor);
+        console.log(keyWords);
+        //transformati arrayul intr-un singur string care sa rezulte "proprietatea1 si proprietatea2 apartin obiectului x"
+    
+        var transString = keyWords.join(', ')
+        console.log(transString);
+        console.log(transString.slice(0, 7) + ' si ' + transString.slice(3, transString.length) + ' apartin obiectului x.')
+    */
+    //Ex6
+    // Avem obiectul : 
+    myObject = {
+      name: "John",
+      surname: "Applegate",
+    }
+    
+    //Adaugati o metoda care sa sorteze cele 2 valori ale numelui.
+
+    var sortNume = Object.values(myObject).sort();
+    console.log(sortNume);
 
 
 
