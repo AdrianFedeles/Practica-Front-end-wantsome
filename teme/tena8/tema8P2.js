@@ -107,6 +107,7 @@ const increment = (varToIncrement) => {
     return varToIncrement + 1;
 };
 const double = (varToDouble) => {
+    
     return varToDouble * 2;
 };
 const square = (varToSquare) => {

@@ -79,6 +79,7 @@ function longStr(str) {
         }
     }
     return lenghtStr;
+    
 }
 console.log(longStr("Wantsome is Awsomeeee today"));
 
