@@ -229,6 +229,23 @@
   text-shadow: 5px 5px 0px #eb452b98, 10px 10px 0px #d3e66d, 15px 15px 0px #72dfc5, 20px 20px 0px #09acac, 25px 25px 0px #156181ce, 30px 30px 0px #c11a2b88;
 }
 
+#lists li {
+  list-style-type: none;
+  margin: 1px;
+  padding: 4%;
+  display: inline;
+  overflow: hidden;
+  position: relative;
+  bottom: 0%;
+}
+
+.list1 {
+  color: blue;
+  text-decoration: none;
+  margin-top: 110px;
+  position: absolute;
+}
+
 .topBottomPart {
   color: white;
   padding-right: 80%;
@@ -245,23 +262,6 @@
 .topBottomPart p {
   padding: 50px;
   text-align: center;
-}
-
-#lists li {
-  list-style-type: none;
-  margin: 1px;
-  padding: 4%;
-  display: inline;
-  overflow: hidden;
-  position: relative;
-  bottom: 0%;
-}
-
-.list1 {
-  color: blue;
-  text-decoration: none;
-  margin-top: 110px;
-  position: absolute;
 }
 
 .badges {
