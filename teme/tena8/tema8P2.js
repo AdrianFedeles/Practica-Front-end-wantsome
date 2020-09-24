@@ -94,3 +94,26 @@ const searchEverything = function (searcherForString) {
 }
 console.log(searchEverything("+a+b+c+")());
 console.log(searchEverything("+ab+c+d+")());
+
+
+function myMap(array, callback) {
+    var arr = [];
+    for (var index in array) {
+        arr.push(callback(array[index]));
+    }
+    return arr;
+}
+const increment = (varToIncrement) => {
+    return varToIncrement + 1;
+};
+const double = (varToDouble) => {
+    return varToDouble * 2;
+};
+const square = (varToSquare) => {
+    return varToSquare * varToSquare;
+};
+var randomArray = [1, 2, 3, 4, 5, 6, 7, 8, 9,10,100];
+
+console.log(myMap(randomArray, increment));  // Implement the function named print so that thos console.log would display the result [ 2, 3, 4, 5, 6, 7, 8, 9, 10 ] in the console
+console.log(myMap(randomArray, double));  // Implement the function named double so that thos console.log would display the result [ 2, 4, 6, 8, 10, 12, 14, 16, 18 ]
+console.log(myMap(randomArray, square));  // Implement the function named square so that thos console.log would display the result [ 1, 4, 9, 16, 25, 36, 49, 64, 81 ]
