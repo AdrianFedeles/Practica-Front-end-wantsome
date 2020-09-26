@@ -140,4 +140,6 @@ console.log(doubleEachNumber(numbers));
 
 
 
+
+
 /*TEMA partea 1 https://codepen.io/oviduzz/pen/pmeBmO?editors=1010     2 https://codepen.io/oviduzz/pen/QRpRqz?editors=0010 3  https://codepen.io/oviduzz/pen/joBjBP?editors=0010*/
