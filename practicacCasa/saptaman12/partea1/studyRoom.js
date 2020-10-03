@@ -7,11 +7,11 @@ function People(firstName, LastName, age, sex, hobbies){
     this.sex=sex;
     this.hobbies=hobbies;
     this.presentYourself = () =>{
-        console.log(`Salut sunt ${this.name.firstName}`);
+        console.log(`Salut sunt ${this.name.firstName} ${this.name.LastName}`);
     };
     this.showBiography = () =>{
         console.log(`${this.name.LastName} ${this.name.firstName} in varsta de ${this.age} are  hobby-urile: ${this.hobbies}`)
-    }
+    };
 }
 
 

@@ -1,0 +1,34 @@
+Clasa de studiu
+
+    1 Profesori
+    2 Elevi
+
+Profesorii si elevii sunr OAMENI.
+
+
+Omul:
+
+    -Nume(Prenume + nume de familie): string
+    -Varsta:numar
+    -sex:sting
+    -Hobby-uri:array de string
+    -Actiune:Salut//"salut sunt XXXX'
+    -Actiune:Biografie//"XXXX in varsta de YYYYY are hobby-urile ZZZZ"
+
+
+
+Elevi > oameni
+
+    -Teme:array de string
+    -Note:lista de numere
+    -Actiune:Salut//"Buna ziua sunt XXXX"
+    -Actiune:Spuna notele//"Notele lui XXX sunt YYYY"
+
+
+
+Profesori >oameni
+
+    -Materie:string
+    -Actiune:Salut//"Buna ziua sunt Domnul/Doamna XXXX si predau YYYY"
+    -Actiune:Evaluare//"Alege un numar random >=1  <= 10.si adauga unui elex X nota.
+
