@@ -58,10 +58,13 @@
 //     console.log(`Felicitari ${student.name.LastName} ${student.name.firstName}, ai luat nota ${grades}`);
 // }
 
+class Utils {
+    constructor() {
 
-/*utility*/
-function getRndInteger(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
+    }
+    getRndInteger(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
 }
 
 /*clasa*/
@@ -75,22 +78,51 @@ class People {
         this.age = age;
         this.sex = sex;
         this.hobbies = hobbies;
-    }
-    
-    presentYourself = () => {
+    };
+    presentYourself() {
         console.log(`Salut sunt ${this.name.firstName}`);
-    }
-
-}
-
-
-
-
-
-People.prototype.showBiography = function () {
-    console.log(`${this.name.LastName} ${this.name.firstName} in varsta de ${this.age} are  hobby-urile: ${this.hobbies}`);
+    };
+    showBiography() {
+        console.log(`${this.name.LastName} ${this.name.firstName} in varsta de ${this.age} are  hobby-urile: ${this.hobbies}`);
+    };
 };
 
+class Student extends People {
+    constructor(firstName, LastName, age, sex, homework, grades) {
+        super(firstName, LastName, age, sex, homework);
+        this.homework = homework;
+        this.grades = grades;
+    };
+    presentYourself() {
+        console.log(`Buna ziua, sunt ${this.name.firstName}`);
+    };
+    showBiography() {
+        console.log(`Notele lui ${this.name.firstName} ${this.name.LastName} sunt ${this.grades}`);
+        console.log(`Ultima nota a fost ${this.grades[this.grades.lenght - 1]}`)
+    };
+}
+
+class Teatcher extends People {
+    constructor(firstName, LastName, age, sex, hobbies, className,) {
+        super(firstName, LastName, age, sex, hobbies);
+        this.className = className
+    }
+    presentYourself() {
+        let noun = "";
+        if (this.sex === "M") {
+            noun = "domnul";
+        }
+        else {
+            noun = "doamna";
+        }
+        console.log(`Buna ziua, sunt ${noun} ${this.name.LastName} si predau ${this.className}`);
+    }
+    evaluate(student) {
+        let grades = getRndInteger(1, 10);
+        student.grades.push(grades);
+        console.log(`Felicitari ${student.name.LastName} ${student.name.firstName}, ai luat nota ${grades}`);
+    }
+}
 
 var student1 = new Student("Radu", "Vasile", 18, "M", ["Filme", "calatorii"], ["informatica"], [10, 9]);
 var student2 = new Student("Marius", "Ionescu", 17, "M", ["calatorii"], ["engleza"], [5, 9]);
@@ -99,7 +131,6 @@ var student4 = new Student("Ioana", "Grigore", 17, "F", ["Muzica", "calatorii"],
 
 student1.presentYourself();
 student1.showGrades();
-
 student1.showBiography()
 
 var teatcher1 = new Teatcher("Ana", "Popescu", 55, "F", ["citit"], "Engleza");

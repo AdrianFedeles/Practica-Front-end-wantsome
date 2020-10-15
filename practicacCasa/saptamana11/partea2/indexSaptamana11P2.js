@@ -417,7 +417,7 @@ console.log(movieIds);
 
 /*TEMA partea 1  1 https://codepen.io/oviduzz/pen/pmeBmO?editors=1010 2 https://codepen.io/oviduzz/pen/QRpRqz?editors=0010 3 https://codepen.io/oviduzz/pen/joBjBP?editors=0010*/
 
-/*TEMA partea 2  1 https://codepen.io/oviduzz/pen/eadGeR?editors=1010 2 https://codepen.io/oviduzz/pen/pmeBmO?editors=1010 3 https://codepen.io/oviduzz/pen/QRpRqz?editors=0010 4 https://codepen.io/oviduzz/pen/joBjBP?editors=0010*/
+/*TEMA partea 2 4 https://codepen.io/oviduzz/pen/eadGeR?editors=1010 */
 
 
 
