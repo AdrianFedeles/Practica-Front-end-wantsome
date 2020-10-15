@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Get Site 42!</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="h1-top-container">
+            <h1>Get your own Site 42 account in seconds</h1>
+        </div>
+        <div class="container-form">
+            <form id="my-form">
+                <!-- username -->
+                <div class="user-Name">
+                    <label class="arrange">USERNAME:</label>
+                    <label id="userNameError" class="error-Message">
+                        <p>Please enter a valid username.</p>
+                    </label>
+                    <input type="text" name="user" id="userName" class="type">
+                    <label class="explanation">(Must be at least 4 characters,letters and numbers only.)</label>
+                </div>
+                <!-- emailul -->
+                <div class="email-Address">
+                    <label class="arrange">EMAIL ADDRESS:</label>
+                    <label id="emailAddressError" class="error-Message">
+                        <p>Please enter a valid email address.</p>
+                    </label>
+                    <input type="text" name="email" id="emailAddress" class="type">
+                    <label class="explanation">We send you registration email to this address.(Double-check your email
+                        address before continuing.)</label>
+                </div>
+                <!-- firstname -->
+                <div class="first-Name">
+                    <label class="arrange">FIRST NAME:</label>
+                    <label id="firstNameError" class="error-Message">
+                        <p>Please enter a valid First Name.</p>
+                    </label>
+                    <input type="text" name="first" id="firstName" class="type">
+                    <label class="explanation">(Must be input.)</label>
+                </div>
+                <!-- lastname -->
+                <div class="last-name">
+                    <label class="arrange">LAST NAME:</label>
+                    <label id="lastNameError" class="error-Message">
+                        <p>Please enter a valid Last Name.</p>
+                    </label>
+                    <input type="text" name="last" id="lastName" class="type">
+                    <label class="explanation">(Must be input.)</label>
+                </div>
+                <!-- nickname -->
+                <div class="nick-Name">
+                    <label class="arrange">NICKNAME:</label>
+                    <input type="text" name="nick_name" id="" class="type">
+                </div>
+                <!-- phone-->
+                <div class="phone-Number">
+                    <label class="arrange">PHONE:</label>
+                    <label id="phoneNumberError" class="error-Message">
+                        <p>Please enter a valid Phone number.</p>
+                    </label>
+                    <input type="number" name="phone" id="phoneNumber" class="type">
+                    <label class="explanation">(Must be at least 10 characters, numbers only.)</label>
+                </div>
+                <!-- radio buttons -->
+                <div class="radio-Buttons">
+                    <label><input type="radio" name="selectOne" value="giveMeASite" checked>GIMME A SITE!</label>
+                    <span></span>
+                    <label><input type="radio" name="selectOne" value="justAuserNamePlease">JUST A USERNAME,
+                        PLEASE.</label>
+                </div>
+                <!-- button next -->
+                <div>
+                    <button type="submit" class="">NEXT</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./indesx.js"></script>
+
+</html>

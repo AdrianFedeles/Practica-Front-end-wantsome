@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    padding: 0;
+    color:  rgba(102, 97, 97, 0.671)
+}
+.h1-top-container{
+    text-align:left;
+    font-size: 90%;
+    color: black;
+    margin-bottom: 3%;
+}
+#my-form > div{
+    margin: 5% 0 5% 0 ;
+    display: flex;
+    flex-direction: column;
+}
+.container-form{
+    width: 40vh;
+    height: 100vh;
+}
+.arrange{
+    margin: 2% 0 2% 0 ;
+    font-weight: bold;
+    font-size: 80%;
+}
+.type{
+    font-weight: bold;
+    font-size: 100%;
+    border: none;
+    height: 3vh;
+    background-color: rgba(221, 221, 221, 0.534);
+}
+.explanation{
+    font-weight: bold;
+    font-size: 80%;
+    margin-top: 5%;
+}
+input[type="radio"] {
+    margin-right:10px;
+    margin-bottom: 10xp;
+}
+.radio-Buttons{
+    font-weight: bold;
+    font-size: 80%;
+}
+span{
+    margin: 5px;
+}
+button[type="submit"]{
+    background-color: black;
+    color: rgba(255, 255, 255, 0.815);
+    font-size: 60%;
+    font-weight: bold;
+    
+}
+button{
+    height: 30PX;
+    width: auto;
+    border: none;
+}
+

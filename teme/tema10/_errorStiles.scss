@@ -1,0 +1,18 @@
+.error-Message{
+    display: none;
+    font-weight: bold;
+    font-size: 85%;
+    border:1.5px solid red;
+    margin-bottom: 5%;
+    width: 100%;
+    height: 3vh;
+    justify-content: center;
+    background-color: rgba(235, 125, 125, 0.2);
+}
+.error-Message p{
+    color: rgba(0, 0, 0, 0.719);
+    margin-top: 2%;
+    margin-left: 2%;
+    font-size: 85%;
+    font-weight: bold;
+}
