@@ -1,0 +1,24 @@
+#container{
+    display: flex;
+    justify-content: space-around;
+}
+.movies{
+    font-size: 30px;
+    color: rgb(100, 98, 180);
+    padding: 10%;
+    width: 35%;
+    background-color: rgba(214, 214, 214, 0.212);
+}
+.idMovie{
+    font-size: 20px;
+    background-color: rgb(214, 214, 214);
+}
+#movieContent{
+    margin-top: 10%;
+    background-color: rgb(214, 214, 214);
+}
+.movieTitle{
+    font-size: 30px;
+    background-color: rgb(214, 214, 214);
+    text-align: center;
+}

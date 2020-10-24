@@ -150,4 +150,4 @@ A doua functie, sortWords(), va primi ca si argument rezultatul primului Promise
 alfabetica. In cazul in care array-ul initial contine un element cu o valoare diferita de tipul string, se va face reject.
 
 5. Implementati functionalitatea anterior prezentata si folositi-o pentru a apela mai multe API-uri externe, la alegere (
-cel putin 3 )
+cel putin 3 )*/

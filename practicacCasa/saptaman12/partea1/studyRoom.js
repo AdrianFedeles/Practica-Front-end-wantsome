@@ -21,10 +21,10 @@
 
 
 let numberIsOdd = false;
-function isOdd(number){
-   if(number % 2 !== 0)
-     numberIsOdd = true;     
-   return numberIsOdd;
+function isOdd(number) {
+  if (number % 2 !== 0)
+    numberIsOdd = true;
+  return numberIsOdd;
 }
 
 
