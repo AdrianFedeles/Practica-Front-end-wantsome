@@ -9,22 +9,22 @@ const url = "./exemplu.json";
 fetch(url)
     .then((response) => response.json())
     .then((response) => localStorage.setItem("user", JSON.stringify(response)));
-let listOfObjects = JSON.parse(localStorage.getItem("user"));
-listOfObjects.forEach((something) => {
+let list = JSON.parse(localStorage.getItem("user"));
+list.forEach((pack) => {
     let div = document.createElement("div");
     let title = document.createElement("h1");
     let author = document.createElement("p");
     let video = document.createElement("video");
-    author.innerText = something.author;
-    title.innerText = something.title;
-    video.setAttribute("src", something.youtubeVideo + "&html5=true");
+    author.innerText = pack.author;
+    title.innerText = pack.title;
+    video.setAttribute("src", pack.youtubeVideo + "&html5=true");
     video.setAttribute("type", "video.mp4");
     body.appendChild(div);
     div.appendChild(title);
     div.appendChild(author);
     div.appendChild(video);
-    let rating = document.createElement("p");
-    let stars = "********";
-    rating.innerText = stars.slice(0, something.rating);
+    let rating = document.createElement("span");
+    let stars = "**********";
+    rating.innerText = stars.slice(0, pack.rating);
     div.appendChild(rating);
 });

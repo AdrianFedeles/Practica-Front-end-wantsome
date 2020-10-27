@@ -5,13 +5,13 @@
 
 localStorage.setItem("width","100px");
 localStorage.setItem("height","100px");
-localStorage.setItem("backgroundColor","green");
+localStorage.setItem("backgroundColor","red");
 
 const width=localStorage.getItem("width");
 const height=localStorage.getItem("height");
-const BgColor=localStorage.getItem("backgroundColor");
-const square=document.createElement("div");
-square.style.width=width;
-square.style.height=height;
-square.style.backgroundColor=BgColor;
-const body=document.getElementById("square").appendChild(square);  
+const backgroundColor=localStorage.getItem("backgroundColor");
+const divSquare=document.createElement("div");
+divSquare.style.width=width;
+divSquare.style.height=height;
+divSquare.style.backgroundColor=backgroundColor;
+const body=document.getElementById("square").appendChild(divSquare);  

@@ -3,15 +3,15 @@
 // A doua functie, sortWords(), va primi ca si argument rezultatul primului Promise si va sorta cuvintele in ordine
 // alfabetica. In cazul in care array-ul initial contine un element cu o valoare diferita de tipul string, se va face reject.
 
-let filter = (array) =>
+let filter = (arr) =>
     new Promise(function (resolve, reject) {
-        array.map((value) => {
-            if (typeof value === "string") {
+        arr.map((value) => {
+            if (typeof value === 'string') {
             } else {
                 reject(value);
             }
         });
-        resolve(array);
+        resolve(arr);
     })
 
         .then((result) => capitalizeWords(result))
@@ -19,29 +19,30 @@ let filter = (array) =>
             console.log(sortWords(result));
         });
 
-const capitalizeWords = (array) => {
-    let capitalized = [];
-    array.map((value) => {
-        capitalized.push(value.toUpperCase());
+const capitalizeWords = (arr) => {
+    let capitalize = [];
+    arr.map((value) => {
+        capitalize.push(value.toUpperCase());
     });
-    return capitalized;
+    return capitalize;
 };
 
-const sortWords = (arrayToSort) => arrayToSort.sort();
+const sortWords = (sortArr) => sortArr.sort();
 
-filter(["assjuasgh", "afasdfgsa", "afgdfsrgr", "mihai", "safgseg", "uhr"]);
-filter([1, "afa,", 2]);
+filter(["a fost", "odata", "ca ", "nici", "odata", "ca", "de", "nu", "ar", "fi", "nu", "s-ar", "mai", "povesti"]);
+filter([1, 2,3,4,5,6,7,8,10 , "unu", "doi", "trei", "patru", "cinci", "sase", "sapte", "opt", "noua", "zece"]);
 
-//////////EXERCITIUL 5////////////////
-let getJSON = function (url) {
+/*5
+Implementati functionalitatea anterior prezentata si folositi-o pentru a apela mai multe API-uri externe, la alegere (cel putin 3 )*/
+let json = function (url) {
     var xhr = new XMLHttpRequest();
     xhr.open("GET", url);
     xhr.onload = function () {
         if (xhr.status == 200) {
-            let x = JSON.parse(xhr.response);
-            filter(x);
+            let pack = JSON.parse(xhr.response);
+            filter(pack);
         }
     };
     xhr.send();
 };
-getJSON(`./exemplu.json`);
+json(`./index.json`);
